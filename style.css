@@ -271,7 +271,7 @@ nav .logo{
     justify-content: space-between; /*Distributing space evenly between items*/
     max-width: 1450px; /*Maximum width limit for large screens*/
     width: 100%; /*Full width*/
-    padding: 0 20px; /*Horizontal padding*/
+    padding: 20 100px; /*Horizontal padding*/
 }
 
 /*Styling for content sections with flex properties*/
