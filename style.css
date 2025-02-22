@@ -126,7 +126,7 @@ a{
 .container{
     max-width: 1450px;  /*Maximum width for readability*/
     margin: auto; /*Center the container within the parent*/
-    padding: 0 8px; /*Horizontal padding for spacing*/
+    padding: 20px 100px; /*Horizontal padding for spacing*/
 }
 
 /*Fixed navigation bar at top with spaced items and background*/
