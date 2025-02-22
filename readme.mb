@@ -1,0 +1,323 @@
+#Hunter Valley Destination Microsite
+##Justifications for Implementations Decisions
+1. **Why did I choose Hunter Valley as my chosen place of the destination?**
+As the chosen place of this destination microsite project, Hunter Valley is one of Australia's most iconic and oldest wine regions located in New South Wales, just north of Sydney and extending inland from the coastal town of Newcastle. It’s renowned for its rich wine-making heritage and beautiful landscapes. The region’s diverse solid and warm climate are ideal for signature wines like Semillon, Shiraz, and Chardonnay (Wine Australia, n.d.). 
+
+2. **What is the goal of my microsite project?** 
+The goal of this microsite is to make Hunter Valley more appealing and representative by focusing on the discovery of the valley's wineries and outdoor activities. Moreover, I wanted to highlight the region's natural beauty and historical significance with the local community and traditions. This project targets families and individuals looking for leisure and adventure.
+
+3. **What is the Color Sheme, Typography and Theme?**
+Earthy color and vineyard color scheme was chosen for the website to reflect Hunter Valley's natural landscape and vineyard aesthetics. This design aims to create a welcoming atmosphere and highlight the area’s natural beauty. I opted for a minimalist aesthetic to enhance usability and focus user attention on key content. Moreover, I decided to find a font that represents Hunter Valley by using a classic and serif font. 
+
+4. **Why did I choose to implement the navigation, layout, footer and interactive map design?** 
+I wanted to enhance the accessibility, responsiveness and user engagement. I decided to make the navigation bar at the top position fixed so that it still stays at the top during scrolling for easy access. I decided to integrate an interactive map using the Google Maps embed code to help users explore, visualize and locate vineyards and event venues in the plan page where they could also see guide books. Moreover, I opted for a combination of CSS Grid and Flexbox for layout management to create a responsive and adaptable design for the mobile. Furthermore, I have decided to make my footer responsive and footer quick links would benefit. 
+![Image](./img/GoogleMap.png)
+
+5. **Were there any issues?**
+While developing the responsive layout for the homepage, I have encountered issues with CSS media queries for the image sliders or gallery as I wasn’t able to click the next button for the next images. I initially tried using the first-child selector and display none to control which images appeared in the gallery to show one image one by one but this prevented me from seeing all the images except the first child of the images. As a result, this limited the gallery’s minted functionality because I was unable to dynamically show each image in sequence on a mobile device. 
+
+##Comparisons between wireframes and prototype & Discussion for any futher iterations/improvements
+###First Iteration
+I used the think-aloud method to gather valuable insights during the evaluation of my wireframes and prototype which involved asking participants to verbalize their thoughts, feelings and reaction while interacting with the bothe the mobile and desktop version of the site. Moreover, I decided to showcase 5 pages to present sufficient information to the user about the Area. I did 2 user testings for the low-fidelity and 3 user testings for the high-fidelity.
+Mid-Fidelity Wireframes: https://www.figma.com/design/QjuSn7ITthjaMBH1VZKDDn/Wireframes---Web-Design?node-id=5-4&t=ZvRmpKzE5tsjFC82-1
+![Image](./img/FirstIteration-1.png) 
+![Image](./img/FirstIteration-2.png) 
+![Image](./img/FirstIteration-3.png) 
+![Image](./img/FirstIteration-4.png) 
+![Image](./img/FirstIteration-5.png) 
+
+###Second Iteration
+![Image](./img/SecondIteration-1.png) 
+![Image](./img/SecondIteration-2.png) 
+![Image](./img/SecondIteration-3.png) 
+![Image](./img/SecondIteration-4.png) 
+![Image](./img/SecondIteration-5.png)
+
+#Appendix
+##Low-Fidelity Wireframes
+###Transcript 1
+Hello, I’m going to walk you through today’s testing session. Your feedback is valuable, and will help us determine if our website functions as intended. During this session, I’ll start by asking you a few general questions. Later on, we'll look at some early designs and try to accomplish a few tasks using the website we’re evaluating. As you go about using the website, we’d like you to think aloud as much as possible: to describe what you’re looking at and what you’re trying to do. The main goal of this session is to see how you navigate the platform, especially when it comes to finding and interacting with features to see what is working well and what could be improved for the next iterations. Also, please don’t worry that you’re going to hurt our feelings. We’re doing this to improve the site, so we need to hear your honest reactions.
+Before we take a look at the site, I’d like to hear a little bit about you. Where are you from? 
+Vietnam
+
+What do you like to do in your spare time? 
+In my spare time, I was just like using my phone, surfing the net.
+
+What kind of destinations would you like to travel to? 
+I feel like I'm more likely to go to the beach or someplace like nature.
+
+To start, please look at this page and tell me what you make of it: What are your first impressions? What do you think this site is for? 
+someone who wants to learn or like to get to know about Hunter Valley.
+
+Thanks for sharing a bit about yourself! Now, I’d like to present a scenario for you to work through. You are an architect visiting Australia for a holiday, eager to explore the stunning landscape and natural beauty of the region. During your trip, you want to discover and learn more on how architecture interacts with the environment and enhances the visitor experience. 
+As you try to complete this task, please think aloud about your opinions of the website and let me know if you have any issues.
+This is the home page, and it will have the introductions text with the call to actions, and learning if I scroll down, okay, some information. Yeah, and then what I can experience in this place, something I can do, planning. This is the home page, and it will have the introductions text with the call to actions, and learning if I scroll down, okay, some information. Balance of value, is it? Yeah, and then what I can experience in this place, something I can do.
+
+Oh yeah there is more in the bottom like the homepage for blogs.
+Maybe, maybe because I didn't scroll that much. And, like, usually, if I find something that I already want, like, I want to experience, I just click ahead. I feel like I don't need to scroll down. But yeah, maybe they have some rooms, yeah. 
+
+Okay. So like, feel free to click on any links that interest you and let me know what you discover, and any question that arises, so, like you saw, like there were, like, a bit like, some buttons, right? So that button locates you to the other pages, like the others, one from, like the navigation bar. And what did you think of the overall design, like the home and like the desktop. Like, what do you like about it and I don’t really like about it?
+I think it gives me a really quick look at the overall website. I just need to know about how they like the information about this place and like, yeah, what I can do, I'm not sure about planning. Is that planning night rape or something about like, how they do this area, or something like that, but I feel like it's already enough information for me on the first home page. So I think that's a good point that you can jump ahead wherever you are, and maybe I feel like this can be a little bit long, so like, if you scroll that I said that I missed this one because I felt like this is already up. So yeah, but I think because the architectures are right to plan to know like this information and then latest blog. Oh, actually, I need that also to read the news. So maybe I would love it if I even put it somewhere here. Maybe it will be more noticeable, because I usually experience Yeah, but maybe just my point of view, yeah, yeah, okay.
+
+Okay so can you go scroll down a bit to the phone version, do you think this one the design overall looks appealing or does it look a bit complex?
+I feel like searching for the searching bar. You don't actually need it because I feel like, if there's a search, I mean, anyway, it's useful for like, if you need to access quick information. But I feel like for the travel website, sometimes we just want mostly, mostly, I think you would just want to explore more than buy the information. So it's okay if you want some person that is brushed or something that I feel like asset and architectures, then they were more like, look at the menu and scroll down instead of like, like they have the, I don't think they have, like, any words that they directly want to search on.
+
+Ah I see so now let’s go to the About Us page so if you press the button you could go to like different pages.
+Oh okay but just wondering, what happens if I click this thing? Is it just the image with captions or will it transfer me to another page?
+
+Oh so there will be a text there so in the image.
+Yeah, I think it's good. I like the idea of it as it doesn’t overload the text and image.
+
+So now I would like you to find information about a guided tour so please navigate to the experience page.
+Oh they have events and all but I feel like maybe put the vineyard tours in the top as it is the highlighted event and events on the bottom. But what events do they usually have?
+
+They usually have festivals and all.
+Oh so yea I feel like it's better to have the tour first at the top as it is the highlighted event happening in Hunter Valley.
+
+Okay. Let’s now look through the plan page and see if you can find any practical information planning.
+So is it more like the information that I need to know before I come here?
+
+Yes.
+I think this page is really nice as it helps me prepare what clothes I need to wear and all. It’s really specific also.
+
+So now let’s explore the blog page.
+Is the blog page supposed to be something that is newly updated or something that’s just there for like the whole time?
+
+It’s more for community based where visitors can review their journey.
+Will there be an option if I scroll down there will be more?
+
+I will try to add more later but yeah. Could you look at the phone page, do you think it's a bit too close in terms of spacing?
+Yes, I think there should be a bit more.
+
+Now, there’s a post interview so what do you think about the design of the website and the layout of the key features.
+I think it's very straightforward. I think it's really good. I said before that, if you click, if you scroll down and when you want to have, like, a big glimpse of everything, you're already information all in. And like, I hope that this information is already helpful enough for people who just want to have a quick look, instead of, like, having to, like, sleep more links to get more information. So yeah, and like for those friends, but page, I think is, yeah, I think they said a good layout. And yeah, maybe just have it. Just when you add information, it will look more interesting.
+
+But do you think the information and content was laid out in a way that made sense to you?
+Yeah I think this all makes sense to me about what they are trying to target.
+
+But were there any aspects that surprised or confused you during your journey? 
+No.
+
+Is there anything else that you would like to suggest?
+I think that’s all. I think it's fine but for the search bar. I’m not sure how it works as I don’t think it's necessary. 
+Okay. Great thanks for helping out!
+No problem.
+
+###Transcript 2
+Hello, I’m going to walk you through today’s testing session. Your feedback is valuable, and will help us determine if our website functions as intended. During this session, I’ll start by asking you a few general questions. Later on, we'll look at some early designs and try to accomplish a few tasks using the website we’re evaluating. As you go about using the website, we’d like you to think aloud as much as possible: to describe what you’re looking at and what you’re trying to do. The main goal of this session is to see how you navigate the platform, especially when it comes to finding and interacting with features to see what is working well and what could be improved for the next iterations. Also, please don’t worry that you’re going to hurt our feelings. We’re doing this to improve the site, so we need to hear your honest reactions.
+Before we take a look at the site, I’d like to hear a little bit about you. Where are you from? 
+Oh, I’m from Penrith, New South Wales.
+
+What do you like to do in your spare time?
+Oh, I like to draw a lot in my spare time or watch anime.
+
+What kind of destination would you like to travel to?
+Well, I’m going to Japan hahah.
+
+Okay, okay, to start now, please look at this page now and tell me what you make of it like, what are your first impressions and what do you think this site is for?
+From what I can say, this looks like a traveling website, or at least a blog website, yeah.
+
+Thanks for sharing a bit about yourself! Now, I’d like to present a scenario for you to work through. So you are a freelance writer and travel blogger looking for a guided tour in New South Wales to see iconic wildlife pros, and you want to learn more about the area scenic beauty and culinary delights, aiming to gather experience and insight that will enhance your blog content and provide your audience with a rich perspective on these pictures due destination. As you try to complete this test, please think a lot about your opinions of the website and let me know if you have any issues. So we will start with the home page so you can explore now. 
+I'm on the home page. I can see on the landing page, there's what I assume to be going, going to be an image of the place with what I assume is the information. There is about us and if I can click this button to explore more what we can do at the location. I could also see planning where we can probably plan our trip and also like the latest blog?
+
+Oh that one is a community in which most people share their blogs.
+Ah okay that makes sense and there is the contact page I see in the about page.I really like the phone version and I like how it's mostly consistent with the desktop.
+
+Do you think I should fix the spacing for it?
+Yea definitely. It’s a bit tight.
+
+Oh, okay. Do you think the text would be better if you could be like a hovering thing? When you hover like the text for experience, and it shows more like a description, so it doesn't look full?
+Yea, I think the images would be nice. 
+
+Okay so now I would like you to explore the second page as you press along the button or nav bar, there is an option right for about. So what do you think about the page?
+I like the consistent landing first of all. I think it’s a good way to show the scenery plus making the users understand a bit about the topic as I know a lot of people sometimes rush what they are looking for. I think these will be clickable links. 
+
+But do you think I should put the text in the middle or the bottom or the top?
+I think they are all a good idea.
+
+Oh so now let’s look at the experience page. What do you think about it? As you click it and see other information.
+I think it is good but I just wonder about events. Wouldn't you want to see more images of different events since there are usually a lot of events happening?
+
+So like more information on that part as well? But do you think I should move the vineyard tour to the top as it is the highlighted one?
+Yea that would be great honestly.
+
+Okay could you navigate to the plan page?
+Oh I like the idea for the map and guide.
+
+Do you think I should separate it cause I want to make the guide have a link for the pdf book?
+Yes definitely, I put the map separately and then guided at the bottom.
+
+So now let's navigate to the blog, what do you think about it?
+I think this is very straightforward and understable where I should go. I really like the navigation parts but I don’t think the search bar is needed. I feel like the navigation parts, the spacing could be better. Overall, the actual content is fine.
+
+Okay so now I would like to do a post interview. Were there any aspects that surprised or confused you during your journey?
+I think the blog page, I feel like the name could be more obvious so people know this is more community posts or the company itself.
+
+Yeah, okay, completely understandable. What do you think about the design of the website and the layout of the key features?
+It’s really consistent which is good across the board. I think it’ll be easy to navigate as a tourist and you know what to expect. I really like the map and guide idea. I think my only issue is the events page as it doesn’t show a lot of events happening at Hunter Valley.
+
+Okay then but did you find the content on the site make sense to you? Was it easy to understand?
+Yeah, It’s but maybe the image is a bit big and maybe just to make the alignment better is that makes sense text wise such maybe make the font bold and so it's a bit more obvious of the headings and all.
+
+Is there anything else you would like to suggest?
+Nope, that’s it.
+
+Thank you so much for helping out.
+No problem.
+
+##Final High Fidelity Site
+###Trascript 1
+
+Hello, I’m going to walk you through today’s testing session. Your feedback is valuable, and will help us determine if our website functions as intended. During this session, we'll look at the websites and try to accomplish a few tasks using the website we’re evaluating. As you go about using the website, we’d like you to think aloud as much as possible: to describe what you’re looking at and what you’re trying to do. The main goal of this session is to see how you navigate the platform, especially when it comes to finding and interacting with features to see what is working well and what could be improved for the next iterations. Also, please don’t worry that you’re going to hurt our feelings. We’re doing this to improve the site, so we need to hear your honest reactions. Now, I’d like to present a scenario for you to work through. So you are a freelance writer and travel blogger looking for a guided tour in New South Wales to see iconic wildlife pros, and you want to learn more about the area scenic beauty and culinary delights, aiming to gather experience and insight that will enhance your blog content and provide your audience with a rich perspective on these pictures due destination. As you try to complete this test, please think a lot about your opinions of the website and let me know if you have any issues. So we’ll start with the home page so please explore.
+So I see the about us and the slider for experiences. I see a plan for your visit page and a blog page. Do you want me to give my thoughts?
+
+Yes please.
+I think the choice of images are really good, especially the dogs and I’m just thinking with the navigation bar. I think I may prefer it to be the same color as the footer where it's red and the text white but that’s just my opinion because I am not sure how the other page would look like. I think the hover image, it’s really cool.
+
+Oh yea you could now press the buttons to go to other pages and if you go to the footer you could also do that.
+Wow, that's impressive.
+
+Thank you.
+I really like the color scheme. It really represents Hunter Valley.
+
+Is there any problem based on the website such as the thing you talk about in the navigation bar?
+I feel like the image quality is a bit inconsistent but I don’t know what you can do about that. I think you should fix the font because if it’s in this format, it's hard to read.
+
+Oh yea true. I will make it smaller. Maybe this image can be bigger for the phone but I don’t know if I could make more images since it just shows the two main ones. I also felt that it could be overwhelming for some people.
+I think it's okay, I wouldn’t want to see a lot if it's on the phone. I think you should make the image bigger for some part to make it consistent and it's a bit hard to see.
+
+Ah okay, could you now navigate to the plan page for the map to see if it’s working well and you could also read the regional guide if you wanna look more into it.
+This is nice.
+
+Do you think the layout is nice like the alignment and all except the one before the phone?
+Yea, I have no problem with it. One thing that bothers me is the green, maybe change it to a different color.
+
+Okay thanks for the feedback, but what do you think about the blog page?
+I feel like there could be more but I like the idea of making it not feel overwhelmed.
+
+Yup. Okay, so I’ll ask a bit about the post interview now. What did you think about the design of the website and the layout of the key features?
+I really like the color palette. I just think they should be adjusted a bit for the phone version.
+
+Do you think the site represents Hunter Valley? 
+Yea, I’m getting the vineyard wine aesthetic from it. 
+
+Were there any aspects that surprised or confused you during your journey of navigating the site?
+I think it's very straightforward which is good but I feel like you could change the button name for some since it feels repetitive.
+
+Okay, that’s fair.
+I think the website is really good.
+
+But did you find the content make sense to you?
+It’s consistent and easy to understand.
+
+Thank you so much for helping out.
+No problem.
+
+###Transcript 2
+Hello. I'm going to walk you through today's testing session. Your feedback is valuable and will help us determine if our website functions as intended. During this session, I'll start by asking you a few general questions. Later on, we'll have a look. We'll look at the website and try to accomplish a few tests using the website we're evaluating. As you go on about using the website, we would like you to think a lot, as much as possible, to describe what you're looking at and what you're trying to do. The main goal of this session is to see how you navigate the platform, especially when it comes to finding an interactive feature, to see what is working well and what could be improved for the next iteration. Also, please don't worry that you're going to hurt our feelings. We're doing this to improve the site. So we need to hear your honest reaction before we take a look at this. I would like to hear a little bit about you. So where are you from?
+I’m from Sydney.
+
+Okay so what do you like to do in your spare time?
+I like to hang out with friends.
+
+If you could go to any destination, what kind of location would you like to travel to?
+I'd like to travel to places I haven't been to, and places that are interesting to me. So I like things that are exciting.
+
+Okay, okay, to start now, please look at this page now and tell me what you make of it like, what are your first impressions and what do you think this site is for?
+I can see that this site is for Hunter Valley so definitely like a travel site which introduces the area people plan their visits.
+
+So now I would like to present a scenario for you to walk through. So you are an architect visiting Australia for a holiday, eager to explore the stunning landscape and natural beauty of the region. During your trip, you want to discover and learn more on how architecture interacts with the environment and enhances the visitor experience. So as you try to complete this stress at this time about your opinions on the website, and let me know if you have any issues. Okay, so start with the home page. So please explore as you go through it.
+
+Yeah, so I'm an architect, and I will be looking at the buildings, yeah, yeah, the architecture of this area, because I want to understand more about the Hunter Valley. Plan your dream escape. Am I here on a holiday?
+
+Yes, visiting Australia for a holiday.
+Okay, but I'm also interested in architecture. So about us. I'm reading about us, Hunter Valley, Australia wine region. So it's introducing that Hunter Valley is Australia's biggest wine or most iconic wine region. So now I'm interested in the wine I'm looking at the things to do, and all of them about to do with, like wine grapes and wine so I can see that winemaking and wine tasting is very important for this region. So I'm thinking about maybe visiting those farms and like wineries, and also thinking about the architecture of wineries, maybe it's rustic looking. So I'm planning my visit because I'm coming here for a holiday, and I'm going to click Explore more now. So here's a map. So that's very handy, and a regional guide unlocked the secrets of Hunter earlier. Download. Oh, so this is really handy. There's a view for a guide that I can download. 
+
+You can also view the guide, it doesn’t automatically download just a view.
+Ah I see. I also like the weather and climate because I know how to plan, how to like, and address that. 
+
+Now, let's look at experience.
+Oh, I'm seeing lots of wine barrels, and that's really interesting to me. Oh, plan your dream. Oh, yeah, vineyard tours. Oh, I'm thinking about maybe joining one of these vineyard tours. So I finished looking at the experiences, which is really good. You definitely had good intentions. I haven't gone to the about page yet. So now I'm like, I've I'm in, I'm excited to come visit. I need to learn more about the place. So the history, it’s the oldest wine region, wow ah, so I now know that semilon and Shiraz are the best. From here, some more information that I'm reading about okay. 
+
+You could also press the buttons if you wanna look at social media.
+I’m gonna go check instagram, but I can see there are a lot of wines and a beautiful landscape with a pagoda which is really exciting to me.
+
+Could you try the phone version now?
+Wow everything is perfectly fitting the phone. I’m going to look at the image slider. But for the hover text, I think I will change the size of the text smaller. I feel like overall as I look all the pages, maybe I just need to fix the spacing in some of the images across the whole screen since they are a bit small. 
+So now as you already go through everything, I will do a post interview. Were there any aspects that surprised or confused you during your journey?
+I don’t think so. It’s really good. I had a very good time clicking everything and looking at the different aspects of the websites. I guess the text was a bit hard to read because it’s been justified. So that’s something I think you can work on but otherwise, everything was really nicely done. The flow was really nicely set out. I also like that you have all these buttons that take you into other pages.
+
+What do you think about the design of the website? Is it laid out in a nice way?
+I think it’s really good but I think it’s slightly but maybe it’s just the spacing which is really tight.
+
+Was the information laid out in a way that makes sense to you?
+I think the buttons really helped me as I’m intuitively going through it and that will take me into different pages. Oh, but then sometimes the buttons are a little confusing because you don't know exploring more will take you to us. Maybe renaming them would be better.
+
+What do you think about the blog page?
+I really like it but maybe name it something else. Since people don’t really understand what the blog is supposed to do.
+
+Is that all?
+Yup.
+
+Thank you so much for helping out!
+You're welcome.
+
+###Transcript 3:
+Hello, I’m going to walk you through today’s testing session. Your feedback is valuable, and will help us determine if our website functions as intended. During this session, we'll look at some early designs and try to accomplish a few tasks using the website we’re evaluating. As you go about using the website, we’d like you to think aloud as much as possible: to describe what you’re looking at and what you’re trying to do. The main goal of this session is to see how you navigate the platform, especially when it comes to finding and interacting with features to see what is working well and what could be improved for the next iterations. Also, please don’t worry that you’re going to hurt our feelings. We’re doing this to improve the site, so we need to hear your honest reactions.  Okay, so the scenario I like to present, you are an architect visiting Australia for a holiday, eager to explore the stunning landscape and natural beauty of the region during your trip. You want to discover and learn more on how architecture interacts with the environment and enhance the visitor experience. So now, as you try to complete this test, please think a lot about your opinions of the website and let me know if you have any issues. So we’ll start with the home page so please explore.
+Okay so they have a lot of things on the home page, I’m going to look around first.
+
+I would like you to search for the about page now.
+Oh okay, I’m gonna press explore more. Oh they have the history of the vineyard and the wine making process and some other information. I would like to look for the Experience page now. Oh they have the tour which I’m really excited about but I’m not sure where to book the session since I really wanna go to this one. I didn’t know they have other events
+
+Oh you think I should make a button on where you could book it?
+Yes if possible since it just tells me the tour guide information.
+
+Yup sure. Could you go to the plan page now and go to the map. You could also look at the footer for more information if you are wondering.
+Okay, maybe I should go to facebook but I’m gonna go back now, I still don’t know where to book even in the plan section, they don’t have it. Okay now I’m going to the blog section. Hmm, I feel like the name should be reviewed instead of a blog. I feel like there should be more posts also rather than having 2 only on the page. I also like the phone version of it but maybe change the font size for the image hover and make some of the images bigger.
+
+I’ll try to add more posts later.
+But this one's enough but maybe adding more would be good. Overall, I think all the pages are really good and clear.
+
+Okay so now I will start the post-interview. How did you feel about navigating the app? Was it easy and intuitive?
+I think it’s really easy because they are all on the home page already, in which I could just click the button and images and it will move to the next page. The navigation bar is really good also.
+
+Was the information laid out in the way that made sense to you?
+Yeah definitely. 
+
+On a scale of one to five, how easy was it to complete the task?
+I think it’s quite easy, maybe 4, since everything is all here already. If I want to plan something, It’s already there as well, like it's very informative and easy to understand.
+
+Is that all?
+Yup.
+
+Thank you so much for the help.
+No problem.
+
+
+###Reference Lists
+1. Flaticon. (n.d.). *Previous [Icon]*. Retrieved from November 2, 2024, from https://www.flaticon.com/free-icon/previous_318276?term=left+arrow&page=1&position=43&origin=search&related_id=318276
+2. Flaticon. (n.d.). *Next [Icon]*. Retrieved from November 2, 2024, from https://www.flaticon.com/free-icon/next_318275?term=right+arrow&page=1&position=35&origin=search&related_id=318275
+3. Hunter Valley Australia. (n.d.). *About the Hunter Valley: Weather and climate.* https://huntervalley-australia.com/about-the-hunter-valley/weather-and-climate/
+4. Hunter Valley Australia. (n.d.). Hunter Valley facts. Retrieved September 16, 2024, from https://huntervalley-australia.com/about-the-hunter-valley/hunter-valley-facts/
+5. Lock, P., Mounter, S., Fleming, E., & Moss, J. (2019). Wineries and wine quality: The influence of location and archetype in the Hunter Valley region in Australia. *Wine Economics and Policy, 8*(2), 180-190. https://www.sciencedirect.com/science/article/pii/S2212977419300092
+6. Wine Australia. (n.d.). *Hunter Valley facilitator guide*. Wine Australia. https://www.wineaustralia.com/getmedia/48065649-80a5-40a0-b3b6-5177c583bcf8/AWD_HunterValley_FacilitatorGuide.pdf?ext=.pdf
+7. Wine Country. (2022, April 27).  *THE HUNTER VALLEY’S WINE & FOOD FESTIVAL RETURNS BIGGER THAN EVER.* Retrieved September 16, 2024, from https://www.winecountry.com.au/press/news/1146-the-hunter-valley-s-wine-food-festival-returns-bigger-than-ever
+8. CDNJS. (n.d.). *Font Awesome*. https://cdnjs.com/libraries/font-awesome
+9. Wine Country. (n.d.). *Cellar doors*. Retrieved from November 3, 2024, from https://www.winecountry.com.au/wine/cellar-doors
+10. Australian Trabeller. (2022, September 14). Retrieved from November 2, 2024, from https://www.australiantraveller.com/nsw/hunter/hunter-valley/top-boutique-hunter-valley-wineries/
+11. World Tower Travel. (n.d). *DAY TOUR - HUNTER VALLEY*. Retrieved from November 2, 2024, https://www.worldtowertravel.com.au/products/p/sydney-city-day-tour-copy
+12. Impart Media. (2024). Hunter Valley Wine & Tourism. *Association 2024 guide*. https://images.impartmedia.com/winecountry.com.au/article/HVWTA_2024_GUIDE.pdf
+13. Hope Estate. (2021). *HUNTER VALLEY GIN & JAZZ FESTIVAL 2021*. https://www.hopeestate.com.au/post/hunter-valley-gin-jazz-festival-2021
+14. Adrenaline. (n.d.). *Hunter Valley hot air ballooning*. Retrieved from November 2, 2024 https://www.adrenaline.com.au/hot-air-ballooning/hunter-valley/?keyword=hunter%20valley%20hot%20air%20balloon&loc_physical_ms=9112533&loc_interest_ms=&gad_source=1&gclid=Cj0KCQjwvpy5BhDTARIsAHSilyk6I4vi4wpBqeUfUVAUv-p1AY94epJVNtV-v8t8vJ1euQJE_8npP_MaAqKkEALw_wcB
+15. ClassBento. (n.d). *Workshops in Hunter Valley*. Retrieved from November 2, 2024 https://classbento.com.au/workshops-hunter-valley?srsltid=AfmBOoqFTUolp55ADh8v6ZuJmNRPBLi7pJoSvGUjPLZYDWGQ3iHP82hR
+16. Block & Print. (n.d.). *Lino printing workshop in Hunter Valley* Retrieved from November 2, 2024. https://www.blockandprint.com.au/service-page/lino-printing-workshop-hunter-valley
+17. Trip Advisor. (n.d.). *Midweek Hot Air Balloon Flight - Hunter Valley*. Retrieved from November 2, 2024. https://www.tripadvisor.com.au/AttractionProductReview-g1027246-d17447259-Midweek_Hot_Air_Balloon_Flight_Hunter_Valley-Lovedale_Cessnock_Greater_Newcastle_.html
+18. Viator. (n.d.). *Hunter Valley Tourism*. Retrieved from November 2, 2024. https://www.viator.com/Hunter-Valley-tourism/d30973-r49996119775-s110215091?m=64818&supag=150570332373&supca=20315564064&supsc=kwd-300733273140&supai=692897503164&supdv=c&supnt=g&suplp=9112533&supli=&supti=kwd-300733273140&tsem=true&supci=kwd-300733273140&supap1=&supap2=&supfi=&gad_source=1&gclid=Cj0KCQjwvpy5BhDTARIsAHSilymC1aQ-16g7vrojhVK8HfzLyX5tew6xakiX-zevmX1PXLILIQO1C6QaApJQEALw_wcB
+19. Geek Tutorials. (2017, January 13). *Insert a Google Map to Your Website*. https://youtu.be/KIC0OK9nKXY?si=eQJp63nKVQ4ojPqFs
+20. Codehal. (2023, May 12). *How to Create Navbar in HTML and CSS*. https://www.youtube.com/watch?v=2DVkNvVcQAU
+21. GreatStack. (2023, March 2). *How To Create Image Gallery In JavaScript | Horizontal Scrolling Using JavaScript*. https://www.youtube.com/watch?v=gzXyRa7jwk4&t=241s
+22. FineGap. (2022, October 30). *How To Add Footer in Html Website*. https://www.youtube.com/watch?v=nkZz9DOBzBI&list=LL&index=4
+23. Hunter Valley Wine Country. (n.d.). *Hunter Valley Wine Country [X profile]*. https://x.com/huntervalleywc
+24. Hunter Valley. (n.d.). *Hunter Valley [Instagram profile]*.https://www.instagram.com/huntervalley/
+25. Hunter Valley Wine Country. (n.d.). Hunter Valley Wine Country [Facebook page]. https://www.facebook.com/huntervalleywinecountry/
+26. W3Schools. (n.d.). *CSS[Website]*.https://www.w3schools.com/css/default.asp

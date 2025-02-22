@@ -1,0 +1,224 @@
+<!--Declares the language which the document will be coded on-->
+<!DOCTYPE html>
+<!--Sets the language of the document to english-->
+<html lang="en">
+<head>
+    <!--Sets the character encoding to UTF-8 for compatibility-->
+    <meta charset ="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title of the webpage-->
+    <title>Hunter Valley</title>
+    <!--Linking to external CSS for styling-->
+    <link rel="stylesheet" href="style.css">
+    <!--Link to Font Aweseome for using icons for the Footers-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head> 
+<body>
+    <!--The Header section which contains the navigation and hero-section-->
+    <section id="header">
+    <!--A container div for aligning and centering content within the header-->
+        <div class="container">
+        <!--Defines the navigation area-->
+            <nav>
+                <!--This is the logo of the site which also link to the homepage-->
+                <div class="logo">
+                    <!--Header that consist the name or logo of the website-->
+                    <h1><a href="index.html">HUNTER VALLEY</a></h1>
+                </div>
+                <!--source:https://www.youtube.com/watch?v=2DVkNvVcQAU
+                I was inspired by this tutorial as it helped me give an idea for the navigation bar.
+                Starts unordered list for the navigation bar links-->
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li> <!--Navigation link to home page-->
+                    <li><a href="About.html">About</a></li> <!--Navigation link to about page-->
+                    <li><a href="Experience.html">Experience</a></li> <!--Navigation link to experience page-->
+                    <li><a href="Plan.html">Plan</a></li> <!--Navigation link to plan page-->
+                    <li><a href="Review.html">Review</a></li> <!--Navigation link to review page-->
+                </ul>
+                <!--Hamburger menu button for the mobile navigation or phone, which is activated using Javascript Script-->
+                <div class="menu-btn"><img src="./img/menu.svg" alt="Hamburger Menu"></div>
+            </nav> <!--End of navigation area-->
+            <!--Main content area of the header-->
+            <div class="header-content">
+                <!--Title of the Site-->
+                <h1>HUNTER VALLEY</h1>
+                <!--Call to Action to invite users to explore the region-->
+                <p>Plan Your Dream Escape, Explore Hunter Valley's Hidden Gems!</p>
+            </div>
+        </div>
+    </section>
+
+    <!--About section with an id for specific styling, using section to held different areas of the page-->
+    <section id="about" class="container">
+    <!--Div section for the about-content-->
+    <div class="about-content">
+        <!--Header introducing the about section-->
+        <h1>About Us</h1>
+        <!--Paragraph or description of Hunter Valley and its signifcance-->
+        <p>Welcome to Hunter Valley! Situated in New South Wales, just north of Sydney and extending inland from the coastal town of Newcastle, the Hunter Valley is one of Australia’s most iconic wine regions, renowned for its rich wine-making heritage and beautiful landscapes. Our Goal is to enhance the visitor experience while highlighting the region’s rich heritage, world class wines and unique cultural attractions.</p>
+        <p>We are dedicated to showcase all that Hunter Valley has to offer from exquisite wine tours and gourmet food to beautiful walks and local artwork. Whether you are a wine lover or seeking a peaceful getaway, Hunter Valley has something for everyone. Join us in exploring this breathtaking region of Australia, and allow us to assist you in making lifelong memories.</p>
+        <!--A button that links to the About page for further Information-->
+        <button class="primary-btn"><a href ="About.html">LEARN MORE</a></button>
+    </div>
+    <!--Div section for the about image-->
+    <div class="about-img">
+    <!--Image that represent the about section taken from the folder of img and using alt to display the text if the image cannot be loaded and is also used by screen readers to imporve accesibility -->
+        <img src="./img/about-homepage.png" alt="About Us">
+    </div>
+    <!--End of the About Us section-->
+    </section>
+
+    <!--source: https://www.youtube.com/watch?v=gzXyRa7jwk4&t=241s
+    This tutorial helped and formed the template of my assignment and usage. I modified the code by adding overlay text when hovering.
+    Image Sliders or gallery for experiences-->
+    <section class="Experiencegallery-wrap">
+        <!--Header for Experiences section-->
+        <h1>EXPERIENCES</h1>
+        <!--Subheader introducing the experiences offered by Hunter Valley-->
+        <h2>THINGS TO SEE & DO</h2>
+    <!--Container for the gallery of experiences by using div-->
+    <div class="gallery-container">
+        <!--Image for the left arrow that is taken from the folder of img which is use for navigating backwards in the gallery-->
+        <img src="./img/left-arrow.png" id="backBtn" alt="Left Arrow">
+    <div class="gallery">
+        <div><!--Individuals gallery item, this is the first row-->
+            <span> <!--span to group image and overlay text together-->
+                <img src="./img/Vineyard-Tours.png" alt="slide1"/> <!--Image for the first gallery items-->
+                <div class="overlay"><a href ="Experience.html">VINEYARD TOURS</a></div> <!--Overlay text that describe the experience-->
+            </span>
+            <span><!--Second Gallery Image with Overlay Text-->
+                <img src="./img/gallery1.png" alt="slide2"/> <!--Image for the second gallery items-->
+                <div class="overlay"><a href ="Experience.html">EAT & DRINK</a></div><!--Overlay text that describe the experience-->
+            </span> 
+            <span><!--Third Gallery Image with Overlay text-->
+                <img src="./img/Workshops-1.png" alt="slide3"/> <!--Image for the third gallery items-->
+                <div class="overlay"><a href ="Experience.html">WORKSHOPS</a></div><!--Overlay text that describe the experience-->
+            </span>
+        </div>
+        <!--Gallery Row 2-->
+        <div>
+            <span><!--span to group image and overlay text together-->
+                <img src="./img/Hunter-Valley-Balloons.jpg" alt="slide4"/><!--Image for the fourth gallery items-->
+                <div class="overlay"><a href ="Experience.html">HOT AIR BALLOONS</a></div><!--Overlay text that describe the experience-->
+            </span>
+            <span>
+                <img src="./img/Markets.png" alt="slide5"/><!--Image for the fifth gallery items-->
+                <div class="overlay"><a href ="Experience.html">MARKETS</a></div><!--Overlay text that describe the experience-->
+            </span>
+            <span>
+                <img src="./img/Festivals.png" alt="slide6"/><!--Image for the fiftth gallery items-->
+                <div class="overlay"><a href ="Experience.html">CONCERTS & FESTIVALS</a></div><!--Overlay text that describe the experience-->
+            </span> 
+        </div>
+     </div>
+        <!--Image for the right arrow that is taken from the folder of img which is user to navigate forwards in the gallery-->
+        <img src="./img/right-arrow.png" id="nextBtn" alt="Right Arrow"> 
+    </div>
+    <!--End of the Gallery section-->
+    </section>
+
+    <!--Plan Your Visit Section-->
+    <section id="plan" class="container">
+        <!--Image associated with the "Plan Your Visit" content with class that is typically used for styling the image section-->
+         <div class="plan-img">
+            <!--Image taken from the "img" folder-->
+            <img src="./img/PlanYourVisit.png" alt="Plan Your Visit">
+        </div>
+        <!--The content for the planning section with class that is typically used for the styling the content section-->
+        <div class="plan-content">
+            <!--First Heading that introduce the title of the section-->
+            <h1>Plan Your Visit</h1>
+            <!--The paragragh that describe the planning section information-->
+            <p>
+                Explore Hunter Valley with ease! Whether you’re here for a day or a weekend, we’ll make the most of your stay here. We are here to make sure your visit is as memorable as possible, from the best suggestions to the most important advice. Start planning today!
+            </p>
+             <!--A button that links to the Plan page for further Information-->
+            <button class="primary-btn"><a href ="Plan.html">DISCOVER MORE</a></button>
+        </div>
+    <!--End of the Plan Your Visit section-->
+    </section>
+
+    <!--New Section for Review-->
+    <section id="review">
+         <!--The content for the review section with class that is typically used-->
+        <div class="review-content">
+            <!--First header that introduce the title of the section-->
+        <h1>REVIEW</h1>
+        <!--The paragragh that describe how the review section works-->
+        <p>
+            Become a part of the Hunter Valley! Discover local stories, events and advice that celebrate the spirit of our region. Make connections with locals and other tourists, and keep up with all the events that make Hunter Valley unique. Check out our recent blogs and reviews!
+        </p>
+        <button class="secondary-btn"><a href ="Review.html">EXPLORE MORE</a></button>
+    </div>
+    </section>
+
+    <!-- source: https://www.youtube.com/watch?v=nkZz9DOBzBI&list=LL&index=3
+    The code for the footer were generally inspired from this which help formed the template of my assignment and usage-->
+    <footer>
+        <!--Main container for footer content. This div help foster all elements to ensure they are consistently styled and positioned within the footer-->
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <!--Links to the social media icons from the website-->
+                <a href="https://www.facebook.com/huntervalleywinecountry/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/huntervalley/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/huntervalleywc"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        <!--Footer Navigation links-->
+        <div class="footerlinks">
+            <!--Unordered list for the navigation links.
+            Provides quick access to other major sections of the websites which help improve the usability-->
+            <ul>
+                <li><a href="index.html">Home</a></li> <!--Navigation link to home page-->
+                <li><a href="About.html">About</a></li> <!--Navigation link to about page-->
+                <li><a href="Experience.html">Experience</a></li> <!--Navigation link to experience page-->
+                <li><a href="Plan.html">Plan</a></li> <!--Navigation link to plan page-->
+                <li><a href="Review.html">Review</a></li> <!--Navigation link to review page-->
+            </ul>
+        </div>
+       </div>
+       <!--Footer Bottom Text with class-->
+       <div class="footerBottom">
+        <p>Copyright &copy;2024; Designed by Joline Sumarli</p>
+    </div>
+    </footer>
+    <!--The JavaScript for Gallery Navigation-->
+    <script>
+        // Create a variable to reference the <div> element with the class "gallery", which contains the scrollable gallery of images
+        const scrollContainer = document.querySelector(".gallery");
+        // Create a variable to reference the button with the ID "backBtn", this button allows users to scroll the gallery to the left
+        const backBtn = document.getElementById("backBtn");
+        // Create a variable to reference the button with the ID "nextBtn", this button allows users to scroll the gallery to the right
+        const nextBtn = document.getElementById("nextBtn");
+
+        // Add a "click" event listener to the nextBtn so when the next button is clicled, the following fucntion will execute 
+        nextBtn.addEventListener("click", () => {
+            // Set the scroll behavior of the gallery to "smooth" for the scrolling effect
+            scrollContainer.style.scrollBehavior = "smooth";
+            // Scroll the gallery container 900 pixels to the right which this moves the gallery view forward to next set of images
+            scrollContainer.scrollLeft += 900;
+        });
+        // Add a "click" event listener to the backBtn so when the back button is clicked, the following fucntion will execute
+        backBtn.addEventListener("click", () => {
+        // Set the scroll behavior of the gallery to "smooth" for the scrolling effect
+            scrollContainer.style.scrollBehavior = "smooth";
+            // This moves the gallery view backward to the previous set of images
+            scrollContainer.scrollLeft -= 900;
+        });
+    </script>
+     <!-- source: https://www.youtube.com/watch?v=1aqomR-FaHw&list=LL&index=10&t=1283s
+    This tutorial helped and formed the template of my assignment and usage for the javascript.
+    The JavaScript for mobile menu toggle or hamburger menu-->
+    <script>
+        // Create a variable to reference the button with the class "menu-btn" which the button is used to open and close navigation menu
+        const menuBtn = document.querySelector(".menu-btn");
+        // Create a variable to reference the navigation links container with the class "nav-links", this holds a list of navigation links and will be shown or hidden
+        const navLinks = document.querySelector(".nav-links");
+
+        // Add a "click" event listener to the menuBtn so when the button is clicked, the following fucntion will run
+        menuBtn.addEventListener("click", function(){
+            //Toggle the "active" class on the navlinks element , this help control whether the navigation menu is visible or hidden
+            navLinks.classList.toggle("active")
+        });
+    </script>  <!--End of Javascript script-->
+</body>
+</html>

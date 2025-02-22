@@ -1,0 +1,142 @@
+<!--Declares the language which the document will be coded on-->
+<!DOCTYPE html>
+<!--Sets the language of the document to english-->
+<html lang="en">
+<head>
+    <!--Sets the character encoding to UTF-8 for compatibility-->
+    <meta charset ="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title of the webpage-->
+    <title>Hunter Valley</title>
+    <!--Linking to external CSS for styling-->
+    <link rel="stylesheet" href="style.css">
+    <!--Link to Font Aweseome for using icons for the Footers-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head> 
+<body>
+<!--About sub section which contains the navigation and about section-->
+    <section id="about-sub">
+          <!--Defines the navigation area-->
+            <nav>
+                <!--This is the logo of the site which also link to the homepage-->
+                <div class="logo">
+                    <!--Header that consist the name or logo of the website-->
+                    <h1><a href="index.html">HUNTER VALLEY</a></h1>
+                </div>
+                <!--source:https://www.youtube.com/watch?v=2DVkNvVcQAU
+                I was inspired by this tutorial as it helped me give an idea for the navigation bar.
+                Starts unordered list for the navigation bar links-->
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li> <!--Navigation link to home page-->
+                    <li><a href="About.html">About</a></li> <!--Navigation link to about page-->
+                    <li><a href="Experience.html">Experience</a></li> <!--Navigation link to experience page-->
+                    <li><a href="Plan.html">Plan</a></li> <!--Navigation link to plan page-->
+                    <li><a href="Review.html">Review</a></li> <!--Navigation link to Review page-->
+                </ul> <!--End of the Unordered list-->
+            <!--Hamburger menu button for the mobile navigation or phone, which is activated using Javascript Script-->
+            <div class="menu-btn"><img src="./img/menu.svg" alt="Hamburger Menu"></div>
+        </nav> <!--End of navigation area-->
+            <!--Sub content area of the header-->
+            <div class="sub-content">
+                 <!--Title of the Page-->
+                <h1>ABOUT US</h1>
+            </div>
+    </section>
+
+    <!--Section dedicated to displaying a gallery of images regarding the about Hunter Valley-->
+    <section class="about-image">
+        <!--First Image Item-->
+        <div class="image-item">
+            <!-- First Image displayed in the gallery-->
+            <img src="./img/HunterValleyHistory.png" alt="Hunter Valley History">
+            <!--Label indicating the content or theme of the image-->
+            <div class="label">VINEYARD HISTORY</div>
+            <!--Overlay text that appears when the user hover the image-->
+            <div class="overlay">Established in the 1820s, Hunter Valley holds the title of Australia’s oldest wine region. Pioneers  like James Busby, who introduced European vine cuttings and George Wyndham, who developed the region’s wine industry played a crucial role in its history. Dr. Henry Lindeman and Maurice O’Shea further enhanced Hunter Valley’s reputation for fine wines. Today, the region blends historical traditions with modern innovations, hosting events such as the Wine & Food Festival, celebrating local flavors and community spirit.
+            </div>
+        </div>
+        <!--Second Image Item-->
+        <div class="image-item">
+            <!--Second Image displayed in the gallery-->
+            <img src="./img/WineMakingProcess.png" alt="Winemaking process">
+             <!--Label indicating the content or theme of the image-->
+            <div class="label">WINEMAKING PROCESS</div>
+             <!--Overlay text that appears when the user hover the image-->
+            <div class="overlay">Experience the craft of winemaking in the Hunter Valley, where exceptional grape varieties such as Semillon and Shiraz thrive in a climate of warm days and cool nights. Only the best fruit is used since each grape is hand-picked at its ripest. It is carefully crushed during the start of the process, which is followed by fermentation that extracts deep tastes and character. The wines are carefully mixed and bottled after being aged in oak or stainless steel barrels, with some aging to further enhance the richness. Discover the love that goes into making Hunter Valley wines, crafted with precisions with a deep respect for tradition. </div>
+        </div>
+        <!--Third Image Item-->
+        <div class="image-item">
+             <!--Third Image displayed in the gallery-->
+            <img src="./img/MEMBERSHIP.png" alt="Membership">
+             <!--Label indicating the content or theme of the image-->
+            <div class="label">MEMBERSHIP</div>
+             <!--Overlay text that appears when the user hover the image-->
+            <div class="overlay"><a href="https://www.winecountry.com.au/membership-application/">PRESS HERE TO BECOME A MEMBER OF HUNTER VALLEY WINE & TOURISM ASSOCIATION & HUNTER VALLEY VISITOR INFORMATION CENTRE</a></div>
+        </div>
+        <!--Fourth Image Item-->
+        <div class="image-item">
+             <!--Fourth Image displayed in the gallery-->
+            <img src="./img/about.jpg" alt="Contact Us">
+            <div class="label">CONTACT</div>
+             <!--Overlay text that appears when the user hover the image-->
+            <div class="overlay">455 Wine Country Drive
+                <br>Pokolbin NSW 2320
+                <br> 
+                <br>Hunter Valley Wine and 
+                <br>Tourism Association 
+                <br>(61) 2 49 900 900
+                <br>info@hvwta.com.au 
+                <br>
+                <br>Hunter Valley Visitor
+                <br>Information Centre
+                <br>(+61) 2 49 936 700 
+                <br>vic@cessnock.nsw.gov.au</div>
+
+        </div>
+    </section>
+<!-- source: https://www.youtube.com/watch?v=nkZz9DOBzBI&list=LL&index=3
+    The code for the footer were generally inspired from this which help formed the template of my assignment and usage-->
+    <footer>
+        <!--Main container for footer content. This div help foster all elements to ensure they are consistently styled and positioned within the footer-->
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <!--Links to the social media icons from the website-->
+                <a href="https://www.facebook.com/huntervalleywinecountry/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/huntervalley/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/huntervalleywc"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        <!--Footer Navigation links-->
+        <div class="footerlinks">
+            <!--Unordered list for the navigation links.
+            Provides quick access to other major sections of the websites which help improve the usability-->
+            <ul>
+                <li><a href="index.html">Home</a></li> <!--Navigation link to home page-->
+                <li><a href="About.html">About</a></li> <!--Navigation link to about page-->
+                <li><a href="Experience.html">Experience</a></li> <!--Navigation link to experience page-->
+                <li><a href="Plan.html">Plan</a></li> <!--Navigation link to plan page-->
+                <li><a href="Review.html">Review</a></li> <!--Navigation link to review page-->
+            </ul> <!--End of Unordered list-->
+        </div>
+       </div>
+       <!--Footer Bottom Text with class-->
+       <div class="footerBottom">
+        <p>Copyright &copy;2024; Designed by Joline Sumarli</p>
+    </div>
+    </footer>
+    <!-- source: https://www.youtube.com/watch?v=1aqomR-FaHw&list=LL&index=10&t=1283s
+    This tutorial helped and formed the template of my assignment and usage for the javascript.
+    The JavaScript for mobile menu toggle or hamburger menu-->
+    <script>
+        // Create a variable to reference the button with the class "menu-btn" which the button is used to open and close navigation menu
+        const menuBtn = document.querySelector(".menu-btn");
+        // Create a variable to reference the navigation links container with the class "nav-links", this holds a list of navigation links and will be shown or hidden
+        const navLinks = document.querySelector(".nav-links");
+
+        // Add a "click" event listener to the menuBtn so when the button is clicked, the following fucntion will run
+        menuBtn.addEventListener("click", function(){
+            //Toggle the "active" class on the navlinks element , this help control whether the navigation menu is visible or hidden
+            navLinks.classList.toggle("active")
+        });
+    </script> <!--End of Javascript script-->
+    </body>
+    </html>

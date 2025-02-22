@@ -1,0 +1,942 @@
+/*Importing "Lora" font from Google Fonts with weight and style for a classic and serif look that match Hunter Valley*/
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+/*Defining the color variable for consistency and easier maintenanace*/
+:root{
+    --primary-light: #bf313c; /*Light red, used for highlights*/
+    --primary-dark: #88282d; /*Dark red, used for buttons and footers*/
+    --secondary-light: #4b6043; /*Olive green, used for pimary button*/
+    --secondary-dark: #355049; /*Darker Olive green, used for button hover */
+    --black: #000000; /*Standard balck for text and icons*/
+    --white: #efefef; /*Standard light grey for backgrounds*/
+}
+
+/*Universal selector resets default browser margin, padding and sets the box-sizing*/
+*{
+    margin: 0; /*No margin*/
+    padding: 0; /*No padding*/
+    box-sizing: border-box;
+}
+
+/*Base styling for body by setting the fonts, disable the horizontal flow*/
+body{
+    font-family: "Lora", serif; /*Uses the imported Lora font from google fonts*/
+    font-weight: 400; /*Setting the weight for standard text*/
+    font-style: normal; /*Normal font style*/
+    overflow-x: hidden; /*Prevents horizontal scrolling*/
+    box-sizing: border-box;
+}
+
+/*Anchor tag styling that helps removes the underline and inherits color for clean design*/
+a{
+    text-decoration: none;
+    color: inherit; /*Inherits parent color for link*/
+}
+
+/*Header section or hero section*/
+#header{
+    width: 100vw; /*Full viewport width*/
+    min-height: 70vw; /*Height relative to width for a responsive hero */
+    background-image: linear-gradient(rgba(60, 60, 40, 0.4), rgba(40, 40, 40, 0.5)), url("./img/hero-section.png"); /*Dark overlay with image to see the text more clearly*/    background-position: center;
+    background-position: center; /*Center the background image*/
+    background-repeat: no-repeat; /*Prevents the background image from repeating in the element's background*/
+    background-size: cover; /*Scales the image to cover the header*/
+    position: relative; /*Positioned relative to its default location*/
+    padding-top: 300px; /*Space from top for centered content*/
+}
+
+/*Styles for About, Experienxe, Plan and Review Page*/
+#about-sub, 
+#experience-sub,
+#plan-sub,
+#review-sub{
+    width: 100%; /*Full width of continer*/
+    min-height: 10vw; /*Responsive minimum height*/
+    background-position: center; /*Centers background image*/
+    background-repeat: no-repeat; /*Prevents the background image from repeating in the element's background*/
+    background-size: cover; /*Ensures the background image covers the section */
+    position: relative;  /*Positioned relative to its default location*/
+    padding-top: 200px; /*space the top for centered content*/
+}
+
+/*Specific background images for each subsection with a dark gradient overlay*/
+#about-sub{
+    background-image: linear-gradient(rgba(60, 60, 40, 0.4), rgba(40, 40, 40, 0.5)), url("./img/About.png");
+}
+
+#experience-sub{
+    background-image: linear-gradient(rgba(60, 60, 40, 0.4), rgba(40, 40, 40, 0.5)), url("./img/Experience.png");
+}
+
+#plan-sub{
+    background-image: linear-gradient(rgba(60, 60, 40, 0.4), rgba(40, 40, 40, 0.5)), url("./img/Plan.png");
+}
+
+#review-sub{
+    background-image: linear-gradient(rgba(60, 60, 40, 0.4), rgba(40, 40, 40, 0.5)), url("./img/Review.png");
+}
+
+/*Header content container with flexbot layout, centers title and subtitle vertically */
+.header-content{
+    display: flex; /*Use flexbox for layout*/
+    flex-direction: column; /*Stack items vertically*/
+    align-items: center; /*Centers items horizontally*/
+    justify-content: center;  /*Centers items vertically*/
+    height: 100%; /*Full height of the container*/
+    gap: 16px; /*Space between header elements*/
+    text-align: center;
+    margin-top: 0; /*Space between header elements*/
+}
+
+/*Main title styling for header*/
+.header-content h1{
+    font-size: 80px; /*Large font for the Hunter Valley*/
+    color: var(--white); /*Text color*/
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8); /*Shadow for better readability*/
+    font-weight: bold; /*Bold font for the heading*/
+}
+
+/*Subtitle styling in hero section for the second text*/
+.header-content p{
+    font-size: 40px; /*Slightly smaller font size than title*/
+    color: var(--white); /*Paragraph text color*/
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); /*Shadow for better readability*/
+}
+
+/*Section content styling with left allignment and padding for layout*/
+.sub-content{
+    display: flex; /*Using flexbox for layout*/
+    flex-direction: column; /*Stack kitems vertically*/
+    align-items: flex-start; /*Align items to the left*/
+    height: 100%; /*Full height of the container*/
+    gap: 16px; /*Space between sub-content elements*/
+    margin-top: 0;  /*No additional space at the top*/
+    padding-bottom: 50px; /*Padding below for spacing*/
+    padding-left: 100px; /*Padding to align content*/
+}
+
+/*Large title styling in subsections*/
+.sub-content h1{
+    font-size: 80px; /*Large font for the other pages title*/
+    color: var(--white); /*Text color for the heading*/
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8); /*Shadow for better readability*/
+    font-weight: bold; /*Heading text bold*/
+}
+
+/*Container for main content - centers and limit max-width*/
+.container{
+    max-width: 1450px;  /*Maximum width for readability*/
+    margin: auto; /*Center the container within the parent*/
+    padding: 0 8px; /*Horizontal padding for spacing*/
+}
+
+/*Fixed navigation bar at top with spaced items and background*/
+nav{
+    top: 0; /*Aligns to the top of the viewport*/
+    left: 0; /*Aligns to the left of the viewport*/
+    width: 100%; /*Full width for the navigation bar*/
+    display: flex; /*Use flexbox for layout*/
+    justify-content: space-between; /*Space items evenly across the bar*/
+    padding: 20px 100px; /*Horizontal padding for spacing*/
+    background-color: var(--white); /*Light background for contrast*/
+    position: fixed; /*fixed positioning to stay at the top during scrolling*/
+    align-items: center; /*Center the items vertically within the nav*/
+    z-index: 100; /*Ensures nav is above other content*/
+}
+
+/*Logo styling within nav bar*/
+nav .logo{
+    font-size: 24px; /*The font size of the logo*/
+    font-weight: 400; /*Setting the weight for standard text*/
+    font-style: normal; /*Normal font style*/
+    margin-right: 20px; /*Add margin right*/
+}
+
+/*Flexbox layout for navigation links with spacing betweem items*/
+.nav-links{
+    padding: 10px; /*space the top for nav bar links to different pages*/
+    font-size: 20px; /*The font size of the the nav bar*/
+    display: flex; /*Use flexbox for layout*/
+    list-style: none; /*Removes the bullet points*/
+    font-style: bold; /*Text font style bold*/
+    gap: 30px; /*Space between links*/
+}
+
+.nav-links a{
+    text-decoration: none; /*Removes the default underline for a cleaner look*/
+    color: var(--primary-dark); /*Sets the link color to the dark primary color, making it consistent with the site's theme*/
+    position: relative; /*Positioned relative to its default location*/
+}
+
+/*Hover effect for navigation links with undeline effect with animation*/
+.nav-links a::after{
+    content:''; /*Empty content for the pseudo-element*/
+    position: absolute; /*Absolute positioning for precise placement*/
+    left: 0; /*Aligns the underline to the left of the link*/
+    bottom: -2px; /*Positions the underline just below the link*/
+    height: 2px; /*height of the underline*/
+    width: 100%; /*Full weight of the underline*/
+    background-color: var(--primary-light); /*Underline matches light red*/
+    transform: scaleX(0); /*Start with invisible scale*/
+    transition: transform 0.3s; /*Smooth transition when hover*/
+}
+
+.nav-links a:hover::after{
+    transform: scaleX(1); /*Expands underline on hover*/
+}
+
+/*Button styling for primary and secondary buttons with hover effects*/
+.primary-btn,
+.secondary-btn{
+    padding: 10px 24px;
+    font-size: 18px;
+    color: white; /*White text color for contrast*/
+    border: none; /*Removes border for cleaner look*/
+    cursor: pointer; /*Changes cursor on hover*/
+    transition: all 0.3s ease; /*Smooth transition for hover*/
+    margin-top: 20px;
+}
+
+
+.primary-btn:hover, 
+.secondary-btn:hover{
+    transform: scale(1.05); /*Slightly enlarges the button for a pop-out effect when hover*/
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /*Adds a soft shadow to created a lifted appearence*/
+}
+
+.primary-btn{
+    background-color: var(--secondary-light); /*Olive greens for primary buttons*/
+}
+
+.primary-btn:hover{
+    background-color: var(--secondary-dark);  /*Darker green when hovering*/
+}
+
+.secondary-btn{
+    background-color: var(--primary-light);  /*Light red for secondary buttons*/
+}
+
+.secondary-btn:hover{
+    background-color: var(--primary-dark);  /*Dark red when hovering*/
+}
+
+/*Mobile meny button, visible on smaller screens*/
+.menu-btn{
+    position: absolute;  /*Positioning thr menu button at the top right of the viewport*/
+    right: 16px; /*14 px form the the right edge*/
+    top: 75px; /*65 px for the the top edge*/
+    bottom: 16px; /*16 px form the the bottom edge*/
+    background: var(--primary-light);  /*using aa css variable for the background color*/
+    padding: 8px 12px; /*Padding around the button*/
+    border-radius: 4px; /*Rounded corners*/
+    align-items: center; /*Centering items vertically in flex container*/
+    justify-content: center; /*Centering items horizontally in flex container*/
+    display: none; /*Hidden by default, likely shown via JavaScript on certain conditions*/
+}
+
+/*Flexbox layout for sections with space between items*/
+#plan, 
+#about {
+    display: flex;/*Enabling flexbox for child items*/
+    align-items: center; /*Aligning items vertically to the center*/
+    justify-content: space-between; /*Distributing space between items*/
+    margin-top: 60px; /*Top margin to seperate from previous content*/
+    margin-bottom: 60px; /*Bottom margin for spacing below*/
+}
+
+ /*Creating a background sections for the regional section*/
+#regional{
+    position: relative; /*Positioned relative to its default location*/
+    padding: 40px 0; /*Vertical padding for spacing*/
+    display: flex; /*Using flexbox for layout*/
+    justify-content: center; /*Centering child elements*/
+    overflow: hidden; /*Hiding overflow content*/
+}
+
+/*Creating a background overlay for the regional section*/
+#regional::before{
+    content:""; /*Empty content for pseudo-element*/
+    position: absolute; /**/
+    top: 0; /*Aligning to the top*/
+    left: 0; /*Aligning to the left*/
+    height: 100%; /*Full height of the parent*/
+    width: 100vw; /*Full viewport width*/
+    background-color: var(--primary-dark); /*Background color from a CSS variable*/
+    z-index: -1; /*Placing it behind other content*/
+}
+
+/*inner container for layout consistency and max width*/
+.inner-container{
+    display: flex;/*Using flexbox for layout*/
+    align-items: center; /*Aligning items vertically to the center*/
+    justify-content: space-between; /*Distributing space evenly between items*/
+    max-width: 1450px; /*Maximum width limit for large screens*/
+    width: 100%; /*Full width*/
+    padding: 0 20px; /*Horizontal padding*/
+}
+
+/*Styling for content sections with flex properties*/
+.plan-content,
+.about-content,
+.regional-content {
+    flex: 1; /*Allowing flex to grow and fill available space*/
+    max-width: 50%; /*Limiting width to half of the parent*/
+    padding: 20px;  /*Padding around the content*/
+}
+
+/*Flex conatiners for images with centered layout*/
+.plan-img,
+.about-img,
+.regional-img{
+    flex: 1; /*Allowing flex to grow*/
+    display: flex; /*Using flexbox for layout*/
+    justify-content: center; /*Centering images horizontally*/
+    padding: 20px;  /*Padding around the images*/
+    transition: transform 0.8s ease-in-out; /*Smmoth scaling transition on hover*/
+}
+
+
+/*The styling for the images within the content sections*/
+.plan-img img,
+.about-img img,
+.regional-img img{
+    width: 100%; /*Full width of the container*/
+    height: auto; /*Maintaining aspect ratio*/
+    max-height: 400px; /*Limiting maximum height to 400px*/
+    object-fit: cover; /*Covering the area while maintaining aspect ratio*/
+    border-radius: 8px; /*Rounded corners*/
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /*Subtle shadow effect for the box*/
+}
+
+/*Styling for the main heading in the regional section*/
+.about-content h1{
+    font-size: 45px; /*Large font size for the main heading*/
+    color: var(--primary-dark); /*Text Color from a CSS variable*/
+    text-transform: uppercase; /*Uppercase Text styling*/
+    margin-bottom: 10px; /*Space below the heading*/
+}
+
+.regional-content h1{
+    font-size: 45px; /*Large font size for the main heading*/
+    color: var(--white); /*Text Color from a CSS variable*/
+    text-transform: uppercase; /*Uppercase Text styling*/
+    margin-bottom: 10px;  /*Space below the heading*/
+}
+
+/*Common styling for paragraphs across the various content*/
+.plan-content p,
+.about-content p,
+.regional-content p{
+    font-size: 18px; /*Standard font size*/
+}
+
+/*Specific margin for paragraphs in the about section*/
+.about-content p{
+    margin-bottom: 10px; /*Space beloe the paragraph*/
+}
+
+/*Image hover effect for scaling*/
+.plan-img img:hover,
+.about-img img:hover,
+.regional-img img:hover{
+    transform: scale(1.05); /*Slighly enlarging the image when hovering*/
+}
+
+/*Specific styling for paragraphs in the regional section*/
+.regional-content p{
+    margin-bottom: 10px; /*Space below the paragraph*/
+    color: var(--white); /*White text color for the paragraph*/
+}
+
+/*Ensuring images in about and regional sections are responsive*/
+#about img,
+#regional img{
+    max-width: 100%; /*Limiting width to container*/
+}
+
+/*Container for the experience gallery section*/
+.Experiencegallery-wrap{
+    display: flex; /*Using flexbox for layout*/
+    flex-direction: column; /*Stacking the children vertically*/
+    align-items: center; /*Centering items horizontally*/
+    text-align: center; /*Centering the text to be align center*/
+    position: relative; /*Establishing positioning context*/
+    width: 100%; /*Full width*/
+    overflow: hidden; /*Hiding overflow content*/
+    border: 3px solid var(--primary-dark); /*Dark border around the section*/
+    background-color: var(--primary-dark); /*Background color*/
+    padding: 10px; /*Adding Padding inside the container*/
+}
+
+/*Main heading styling for the experience gallery*/
+.Experiencegallery-wrap h1{
+    font-size: 45px; /*Large font size*/
+    color: var(--white); /*White text color*/
+    text-transform: uppercase; /*Uppercase text styling*/
+    margin: 0; /*No margin*/
+    padding-top: 20px; /*Padding above the heading*/
+    text-align: center; /*Centering text*/
+    width: 100%; /*Full width*/
+}
+
+ /*Subheading styling for the expeiernce gallery*/
+.Experiencegallery-wrap h2{
+    font-size: 35px; /*Font size for the subheading*/
+    color: var(--white); /*White text color for the subheading*/
+    margin-top: 5px; /*Space above the subheading*/
+    margin-bottom: 20px;  /*Spacr below the subheading*/
+    font-weight: normal;  /*Normal font weight*/
+    width: 100%;  /*Full width*/
+    text-align: center;  /*Centering text*/
+}
+
+/*Container for the gallery layout*/
+.gallery-container{
+    position: relative; /*Positioned relative to its default location*/
+    display: flex; /*Using flexbox for layout*/
+    align-items: center; /*Centering items vertically*/
+    justify-content: center; /*Centering items horizontally*/
+    width: 100%; /*Full width*/
+    overflow: hidden; /*Hiding overflow content*/
+}
+
+/*Flebox for horizontal scrolling gallery*/
+.gallery{
+    display: flex; /*Enable flexbox*/
+    overflow-x: auto; /*Enabling horizontal scrolling*/
+    scroll-snap-type: x mandatory; /*Enforcing snap behavior on scroll*/
+    justify-content: flex-start; /*Aligning items to the start*/
+    gap: 15px; /*Spacing between items*/
+    width: 100%; /*Full width*/
+    padding: 15px; /*Padding around the gallery*/
+}
+
+/*Individual grid item within the gallery */
+.gallery div{
+    width: 100%; /*Full width*/
+    display: grid; /*Using the grid layout*/
+    grid-template-columns: auto auto auto; /*Three column layout*/
+    grid-gap: 15px; /*Spacing betweem the grid items*/
+    flex: none; /*Spacing flex grow*/
+    scroll-snap-align: center; /*Center snapping of the grid items*/
+}
+
+/*Image styling within gallery items*/
+.gallery div img{
+    width: 95%; /*Almost full width*/
+    transition: transform 0.3s ease, filter 0.3 ease; /*Transition effects for hover*/
+}
+
+/*Hover effecst for gallery images*/
+.gallery div img:hover{
+    filter: grayscale(0); /*Removing grayscale on hover*/
+    cursor: pointer; /*Changing cursor to pointer*/
+    transform: scale(1.1); /*Slightly enlarging the image when hover*/
+}
+
+/*Hiding the scrollbar in the gallery*/
+.gallery::-webkit-scrollbar{
+    display: none; /*No display for the scrollbar*/
+}
+
+/*Wrapper for individual images with overlay*/
+.gallery span{
+    position: relative; /*Positioning for absolute children*/
+    display: inline-block; /*Inline block for sizing*/
+    overflow: hidden; /*Hiding overflow cintent*/
+    scroll-snap-align: center;/*Center snapping on scroll*/
+}
+
+/*Set overlay to cover image, align center, set background and hide initially*/
+.gallery span .overlay{
+    position: absolute; /*Positioned absolutely within the span*/
+    top: 0; /*Aligns to the top*/
+    left: 0; /*Aligns to the left*/
+    right: 0; /*Aligns to the right*/
+    bottom: 0; /*Aligns to the bottom*/
+    background-color: rgba(255, 255, 255, 0.6); /*Set semi transparent white baackground*/
+    display: flex; /*Use flexbox layout*/
+    align-items: center; /*Center overlay content vertically*/
+    justify-content: center; /*Center overlay content horizontally*/
+    color: var(--primary-dark); /*Back text color*/
+    font-size: 45px; /*Font size for overlay text*/
+    font-weight: bold; /*Bold overlay text*/
+    opacity: 0; /*Hidden initially*/
+    transition: opacity; /*Transition for opacity*/
+}
+
+/*Hover effect darken and scale gallery images while displaying overlay*/
+.gallery span:hover img{
+    filter: brightness(0.5); /*Darken the image*/
+    transform: scale(1.05); /*Slightly enlarge the image*/
+    transition: all 0.3s ease; /*Smoother transition*/
+}
+
+/*Display the overlay text when hovering over gallery items*/
+.gallery span:hover .overlay{
+    opacity: 1; /*Show the overlay*/
+}
+
+/*Styling for navigation buttons in the gallery*/
+#backBtn, #nextBtn{
+    width: 40px; /*Fixed width for buttons*/
+    height: 40px; /*Fixed height for buttons*/
+    cursor: pointer; /*Change cursor to pointer*/
+    position: relative; /*Allow positioning relative to parent*/
+    top: 50%; /*Center Vertically*/
+    border-radius: 50%; /*Circular buttons*/
+    z-index: 10; /*Bring buttons above other elements*/
+}
+
+/*Margin adjustments for the back navigation button*/
+#backBtn{
+    margin-right: 20px; /*Space to the right*/
+}
+
+/*Margin adjustments for the next navigation button*/
+#nextBtn{
+    margin-left: 20px; /*Space to the left*/
+}
+
+/*Review section styling with a background gradient overlay*/
+#review{
+    background-image: linear-gradient(rgba(0, 50, 30, 0.5), rgba(40, 40, 30, 0.5)),url("./img/ReviewHomePage.png"); /*Gradient overlay with background image*/
+    background-size: cover; /*Cover the entire area*/
+    background-position: center; /*Center the background image*/
+    min-height: 500px; /*Minimum height for the section*/
+    padding-top: 40px; /*Space above the content*/
+}
+
+/*Review content styling for centered layout*/
+.review-content{
+    display: flex; /*Use flexbox layout*/
+    align-items: center; /*Center items vertically*/
+    flex-direction: column; /*Stack items vertically*/
+    justify-content: center; /*Center items horizontally*/
+    height: 500px; /*Fixed height for the section*/
+    gap: 16px; /*Space between items*/
+    padding: 0 16px; /*Horizontal padding*/
+}
+
+/*Review title styling with text shadow for better visibility*/
+.review-content h1{
+    color: var(--white); /*White color for visibility*/
+    font-size: 45px; /*Large font size for the title*/
+    text-shadow: 3px 3px 4px rgba(0,0,0,0.8); /*Shadow effect for depth*/
+}
+
+/*Paragraph styling in the Review section*/
+.review-content p{
+    color: var(--white); /*White color for visibility*/
+    font-size: 20px; /*Medium font size for readbility*/
+    text-shadow: 4px 4px 4px rgba(0,0,0,0.8); /*Shadow effect for depth*/
+    max-width: 500px; /*Medium width for paragraphs*/
+}
+
+/*Plan section title styling for visibility*/
+.plan-content h1{
+    font-size: 45px; /*Large font size for the title*/
+    color: var(--primary-dark); /*Dark color text*/
+    text-transform: uppercase; /*Uppercase letters*/
+    margin-bottom: 10px; /*Space below the title*/
+}
+
+/*Paragraph margin adjustment for plan content*/
+.plan-content p{
+    margin-bottom: 10px; /*Space below the paragraph*/
+}
+
+/*Maximum width for images in the plan section*/
+#plan img{
+    max-width: 100%; /*Prevent images from overflowing*/
+}
+
+/*Footer background styling*/
+footer{
+    background-color: var(--white); /*White background for the footer*/
+}
+
+/*Footer container with padding for spacing*/
+.footerContainer{
+    width: 100%; /*Full width*/
+    padding: 40px 0 20px 0; /*Vertical padding*/
+}
+
+/*Social icon wrapper with centered layout*/
+.socialIcons{
+    display: flex; /*Use flexbox layout*/
+    justify-content: center; /*Center items horizontally*/
+}
+
+/*Styling for social media icons in the footer*/
+.socialIcons a{
+    text-decoration: none; /*No underline for links*/
+    padding: 10px; /*Padding around icons*/
+    background-color: var(--white); /*White background for buttons*/
+    margin: 10px; /*Space around each icon*/
+    border-radius: 50%; /*Circular icons*/
+}
+
+/*Icon color and opcaity in social links*/
+.socialIcons a i{
+    font-size: 30px; /*Large font size for icons*/
+    color: var(--primary-dark); /*Dark color using a CSS variable*/
+    opacity: 0.9; /*Slightly transparent for a subtle effect*/
+}
+
+/*Changes the background color of the social media cover when hover for better visibility*/
+.socialIcons a:hover{
+    background-color:  var(--primary-light); /*Set the background color*/
+    transition: 0.5s; /*Smoother transition*/
+}
+
+/*Social icon hover effect by changing the color and opacity*/
+.sociaIcons a:hover i{
+    color: white; /*Fully opaque when hover*/
+    transition: 0.5s; /*Smoother transition*/
+}
+
+/*Add vertical margin around the footer links for spacing*/
+.footerlinks{
+    margin: 30px 0;
+}
+
+/*Style for footer links container*/
+.footerlinks ul{
+    display: flex; /*Use flexbox to layout the links in a row*/
+    justify-content: center; /*Center the links within the container*/
+    list-style-type: none; /*Remove the bullet points from the list*/
+}
+
+/*Styling for individual footer link items*/
+.footerlinks ul li a{
+    color: var(--primary-dark); /*Set link color to the primry dark*/
+    margin: 20px; /*Add horizontal margin for spacing between links*/
+    text-decoration: none; /*Remove the underline from links*/
+    font-size: 18px; /*Set font size for the links*/
+    opacity: 0.7s; /*Set initial opacity for a subtle effect*/
+    transition: 0.5s; /*Smmoth transition effect for hover states*/
+}
+
+/*Increase the opacity of the links when hover for highlighted effect*/
+.footer ul li a:hover{
+    opacity: 1; /*Set opacity to full*/
+}
+
+/*Style for the footer bottom section*/
+.footerBottom{
+    background-color: var(--primary-dark); /*Dark background for the footer*/
+    padding: 20px; /*Padding around the content*/
+    text-align: center; /*Center the text within the footer*/
+}
+
+.footerBottom p{
+    color: white; /*Set the the paragraph text color to white for contrast*/
+}
+
+/*Styling for the designer label*/
+.designer{
+    opacity: 0.7; /*Slightly transparent for a subtle effect*/
+    text-transform: uppercase; /*Uppercase text for emphasis*/
+    letter-spacing: 1px; /*Add spacing between letters*/
+    font-weight: 400; /*Normal font weight*/
+    margin: 0px 5px; /*Small margin for spacing*/
+}
+
+#map-section{
+    text-align: center; /*Center the text for the map section*/
+    margin: 40px 0; /*Vertical margin for spacing*/
+}
+
+#map-section h1{
+    margin-bottom: 20px; /*Margin below the heading*/
+    color: var(--primary-dark); /*Dark color for visibility*/
+    font-size: 45px; /*Large font size for the heading*/
+}
+
+.map-container{
+    display: flex; /*Use flexbox for layout*/
+    justify-content: center; /*Cente the map container*/
+}
+
+.map-container iframe{
+    width: 100%; /*Full width of the container*/
+    max-width: 1400px; /*Limit the maximum width*/
+    height: 700px; /*Fixed height for the map*/
+    border: 0; /*Remove default border*/
+    border-radius: 8px; /*Rounded corners*/
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /*Subtle shadow for depth*/
+}
+
+.about-image{
+    display: grid; /*Use the grid layout*/
+    grid-template-columns: repeat(2, 1fr); /*Two equal columns*/
+    gap: 20px; /*Soace between grid items*/
+    padding: 90px; /*Padding aroun the grid*/
+}
+
+.section-header{
+    grid-column: 1/-1;/*Span the full width of the grid*/
+    text-align: center; /*Center the text*/
+    font-size: 45px; /*Larger font*/
+    color: var(--primary-dark); /*White color for contrast*/
+    margin-bottom: 30px; /*Margin below the header*/
+}
+
+.image-item{
+    position: relative; /*Position relative for absolute positioning*/
+    overflow: hidden; /*Hide overflow to maintain layout*/
+}
+
+.image-item img{
+    width: 100%; /*Full width of the container*/
+    height: auto; /*Maintain aspect ratio*/
+    display: block; /*Block display for image*/
+}
+
+.label{
+    position: absolute; /*Position absolute to place label over image*/
+    bottom: 0; /*Align to the bottom of the image*/
+    left: 0; /*Align to the left*/
+    background-color: var(--primary-dark); /*Dark background for visibility*/
+    color: white; /*White text color for contrast*/
+    padding: 5px 10px; /*Padding around the label*/
+    font-size: 14px; /*Smaller font size for the label*/
+    border-radius: 0 4px 0 0; /*Rounder corners on top*/
+    font-size: 45px; /*Increase font size for the label*/
+}
+
+.overlay{
+    position: absolute; /*Position absolute to overlay on image*/
+    top: 0; /*Cover from the top*/
+    left: 0; /*Cover from the left*/
+    right: 0; /*Cover from the right*/
+    bottom: 0; /*Cover from the bottom*/
+    background-color: rgba(255, 255, 255, 0.7); /*Light semi transparent background*/
+    color: var(--black); /*Back text color*/
+    font-weight: bold; /*Bold text for emphasis*/
+    display: flex; /*Flexbox for centering content*/
+    justify-content: center; /*Center content horizontally*/
+    align-items: center; /*Center contemt vertically*/
+    opacity: 0; /*Initially hidden*/
+    transition: opacity 0.3s ease; /*Smooth transition for opacity change*/
+    font-size: 18px; /*Font size for the overlay text*/
+    text-align: center; /*Center text alignment*/
+    padding: 10px; /*Padding around overlay content*/
+}
+
+.image-item:hover .overlay{
+    opacity: 1; /*Make overlay visible when hover*/
+}
+
+/*Media query for mobile versions or screens 520ox wide or smaller*/
+@media only screen and (max-width: 520px){
+    #header{
+        min-height: 10vh; /*Set the minimum height for the header section in which this code ensure that the header has a height of 5% of the viewport height*/
+    }
+    /*Set width for header and various section element by making tehe section full width and ensure they do not exceed the width*/
+    #header, #about-sub, #plan-sub , #review-sub, #experience-sub{
+        width: 100%;
+        max-width: 100%;
+    }
+    /*Flexible layout for header content*/
+    .header-content{
+        display: flex; /*Use flexbox for layout*/
+        flex-direction: column; /*Stack items vertically*/
+        align-items: center; /*Center item horizontally*/
+        justify-content: center; /*Center items vertically*/
+        height: 100%; /*Full height of the container*/
+    }
+    /*Flexible layout for sub-content areas*/
+    .sub-content{
+        display: flex; /*Use flexbox for layout*/
+        flex-direction: column; /*Stack items vertically*/
+        align-items: flex-start; /*Align items to the left*/
+        justify-content: center; /*Center items vertically*/
+        height: 100%; /*Full height of the container*/
+        padding-left: 5px; /*Small left padding*/
+    }
+    .header-content h1{
+        font-size: 40px; /*Set the font size for header*/
+        text-align: center; /*Center the header text*/
+    }
+    .sub-content h1{
+        font-size: 40px; /*Set the font size for header paragraph*/
+        padding-left: 10px; /*Padding for left alignment*/
+    }
+    .header-content p{
+        font-size: 20px; /*Set the font size for sub-content paragraph*/
+        padding-bottom: 250px; /*Align text to the left*/
+        text-align: center; /*Padding for left alignment*/
+    }
+    .sub-content p{
+        font-size: 20px; /*Set font size for sub-content paragraph*/
+        text-align: left; /*Align text to the left*/
+        padding-left: 10px; /*Padding for left alignment*/
+    }
+    .menu-btn{
+        display: flex; /*Show menu button in flex layout*/
+    }
+    nav{ 
+        padding-top: 75px; /*Add padding around the navigation*/
+        padding-left: 16px;
+    }
+    nav ul{
+        position: fixed; /*Fix the navigation to the viewport*/
+        top: 0; /*Align to the top*/
+        right: 0; /*Align to the right*/
+        flex-direction: column; /*Stack menu items vertically*/
+        justify-content: flex-start; /*White background for visibility*/
+        background-color: var(--white); /*Set width of the navigation*/
+        width: 80%; /*Set width of the navigation*/
+        height: 100%; /*Full height of the viewport*/
+        align-items: end; /*Align items to the end right side*/
+        padding: 16px; /*Padding for the navigation*/
+        padding-top: 80px; /*Extra padding at the top*/
+        margin-right: -900px; /*Initial position off-screen*/
+        transition: all 0.3s ease; /*Smmoth transition for movement*/
+    }
+    nav ul.active{
+        margin-right: 0; /*Bring the navigation into the view*/
+    }
+    nav li{
+        border-bottom: 1px solid var(--primary-dark); /*Divider line between items*/
+        width: 100%; /*Full width of ther navigation*/
+        padding: 8px 16px; /*Padding for each navigation item*/
+        text-align: left; /*Align text to the left*/
+    }
+    .nav-links{
+        padding-top: 150px; /*space the top for nav bar links to different pages*/
+        font-size: 20px; /*The font size of the the nav bar*/
+        display: flex; /*Use flexbox for layout*/
+        list-style: none; /*Removes the bullet points*/
+        font-style: bold; /*Text font style bold*/
+        gap: 30px; /*Space between links*/
+    }
+    .container, .inner-container{
+        flex-direction: column; /*Stack items vertically*/
+        padding: 0 10px; /*Horizontal padding*/
+    }
+    #about, #regional{
+        flex-direction: column; /*Stack items vertically*/
+        align-items: center; /*Center items horizontally*/
+        text-align: center; /*Center align text*/
+    }
+    .about-content, .regional-content{
+        max-width: 100%; /*Ensure max width is 100%*/
+        padding: 20px; /*Add padding around content*/
+    }
+    .about-img, .regional-img{
+        max-width: 100%; /*Ensure images do not exceed width*/
+        margin-top: 20px; /*Margin above the image*/
+        padding: 20px; /*Padding around the image*/
+    }
+    .about-img img
+    .regional-img img{
+        width: 100%; /*Full width for images*/
+        height: auto; /*Maintain aspect ration*/
+    }
+    #plan{
+        flex-direction: column; /*Stack items vertically*/
+        align-items: center; /*Center the items horizontally*/
+        text-align: center; /*Center align text*/
+    }
+    .plan-content{
+        max-width: 100%; /*Ensure the content maximum width is 100%*/
+        padding: 20px; /*Add padding around content*/
+    }
+    .plan-img{
+        max-width: 100%; /*Ensure the images maximum width is 100%*/
+        margin-top: 20px; /*Margin above the image*/
+        padding: 20px;  /*Add padding around content*/
+    }
+    .about-image{
+        gap: 40px;  /*Space between grid items*/
+        display: grid;  /*Use grid layout*/
+        grid-template-columns: 1fr;  /*Single column layout*/
+        justify-items: center;  /*Center items within grid*/
+        justify-content: center;  /*Center the grid itself*/
+        width: 100%;  /*Full width of the container*/
+        overflow-x: hidden;  /*Prevent horizontal overflow*/
+        padding-top: 40px;  /*Padding at the top*/
+        padding-bottom: 40px  /*Padding at the bottom*/
+    }
+    .section-header{
+        text-align: center;  /*Center align the section header*/
+    }
+    .about-image .image-item{
+        width: 90vw;  /*Width of image items relative to viewport*/
+        display: flex;  /*Use flex layout*/
+        justify-content: center;  /*Center image items*/
+    }
+    .about-image .image-item img{
+        width: 100%;  /*Full width of image item*/
+        max-width: 100%;  /*Prevent exceeding maximum width*/
+        height: auto;  /*Maintain aspect ratio*/
+        object-fit: cover;  /*Cover the entire area of the image item*/
+    }
+    .about-image .label{
+        font-size: 20px;  /*Set the font size for labels*/
+    }
+    .about-image .overlay{
+        font-size: 14px;  /*Set the font size for the labels */
+    }
+    .gallery{
+        display: flex; /*Use flex layout*/
+        overflow: hidden;  /*Hide overflow for better layout*/
+        position: relative;  /*Set relatibe positioning for button control*/
+        width: 100%;  /*Full width of the gallery*/
+    }
+    .gallery div{
+        display: flex; /*Use flex layout*/
+        transition: transform 0,5s ease;  /*Smooth transition for movement*/
+    }
+    .gallery span{
+        min-width: 100%;  /*Each span takes full width*/
+        flex-shrink: 0;  /*Prevent shrinking of spans*/
+        display: none;  /*Hide spans by default*/
+    }
+    .gallery span:first-child{
+        display: block;  /*Display the first item*/
+    }
+    #backBtn, #nextBtn{
+        cursor: pointer;  /*Change cursor on hover*/
+        z-index: 10;  /*Ensure the buttoms are above the other elements such as the images*/
+        position: absolute;  /*Absolute positioning for control placement*/
+        top: 50%;  /*Center vertically*/
+        transform: translateY(-50%);  /*Adjust for perfect centering*/
+    }
+    #backBtn{
+        left: 10px;  /*Position the button to the left*/
+    }
+    #nextBtn{
+        right: 10px;  /*Position the button to the right*/
+    }
+    .gallery > div{
+        transform: translateX(0);  /*No offset initially*/
+    }
+    #nextBtn:focus + .gallery>div{
+        transform: translateX(-100%);  /*Move to show next item*/
+    }
+    #nextBtn:focus + .gallery>div+span{
+        display: block;  /*Show next item*/
+    }
+    #backBtn:focus + .gallery>div{
+        transform: translateX(100%);  /*Move to show the previous item*/
+    }
+    .primary-btn, .secondary-btn{
+        width: 100%;  /*Full width for buttons*/
+        padding: 15px;  /*Padding round buttons*/
+        font-size: 16px;  /*Font size for the buttons*/
+    }
+    .overlay{
+        font-size: 14px;  /*Smaller font size for the overlay*/
+    }
+    .footerlinks ul{
+        flex-direction: column;  /*Stack footer links vertically*/
+    }
+    .footerlinks ul li{
+        width: 100%;  /*Full width footer links*/
+        text-align: center;  /*Center align the footer links*/
+        padding: 10px;  /*Padding around the footer links*/
+    }
+}

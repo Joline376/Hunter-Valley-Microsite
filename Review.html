@@ -1,0 +1,132 @@
+<!--Declares the language which the document will be coded on-->
+<!DOCTYPE html>
+<!--Sets the language of the document to english-->
+<html lang="en">
+<head>
+    <!--Sets the character encoding to UTF-8 for compatibility-->
+    <meta charset ="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title of the webpage-->
+    <title>Hunter Valley</title>
+    <!--Linking to external CSS for styling-->
+    <link rel="stylesheet" href="style.css">
+    <!--Link to Font Aweseome for using icons for the Footers-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head> 
+<body>
+    <!---Review sub section which contains the navigation and review section-->
+    <section id="review-sub">
+         <!--Defines the navigation area-->
+            <nav>
+                 <!--This is the logo of the site which also link to the homepage-->
+                <div class="logo">
+                <!--source:https://www.youtube.com/watch?v=2DVkNvVcQAU
+                I was inspired by this tutorial as it helped me give an idea for the navigation bar.
+                Starts unordered list for the navigation bar links-->
+                    <h1><a href="index.html">HUNTER VALLEY</a></h1>
+                </div>
+                <!--Starts unordered list for the navigation bar links-->
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li> <!--Navigation link to home page-->
+                    <li><a href="About.html">About</a></li> <!--Navigation link to about page-->
+                    <li><a href="Experience.html">Experience</a></li> <!--Navigation link to experience page-->
+                    <li><a href="Plan.html">Plan</a></li> <!--Navigation link to plan page-->
+                    <li><a href="Review.html">Review</a></li>  <!--Navigation link to review page-->
+                </ul>  <!--End of the Unordered list-->
+                <!--Hamburger menu button for the mobile navigation or phone, which is activated using Javascript Script-->
+                <div class="menu-btn"><img src="./img/menu.svg" alt="hamburgerMenu"></div>
+            </nav> <!--End of navigation area-->
+            <div class="sub-content">
+                <!--Title of the Page-->
+                <h1>REVIEW</h1>
+            </div>
+    </section>
+
+    <!--Using the same id and class from the Home.html for the layout, this section is now about more information about visitors review and blog-->
+    <section id="plan" class="container">
+        <div class="plan-img">
+             <!--Image associated with the "UNFORGETTABLE MEMORIES" content with the same class that is typically used for styling the image section-->
+            <img src="./img/Unforgettable.png" alt="Unforgettable Memories">
+        </div>
+        <!-- still using the same content for the planning section with class that is typically used for the styling the content section-->
+        <div class="plan-content">
+            <!--First Heading that introduce the title of the section-->
+            <h1>UNFORGETTABLE MEMORIES</h1>
+            <!--The paragragh that describe how the information or description about it-->
+            <p>
+                “<i>Our trip to Hunter Valley was a delight from start to finish! The highlight of our trip was the wine and meal combinations we had. The stunning views made every moment special and every sip told a story. We took a few bottles home with us along with some amazing memories!</i>”
+            </p>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>- <strong>Sophia, G</strong></p>
+        </div>
+    </section>
+
+    <!--Decided to use the same id and class from the Plan.html for the layoutthis section is now about more information about latest news from users -->
+    <section id="regional">
+         <!--Defines a flexible layout that helps manage how the child elemeny are display within the container-->
+        <div class="inner-container">
+             <!--The content for the regional section withe class that is typically used for the styling the content section-->
+            <div class="regional-content">
+                <!--First Heading that introduce the title of the section-->
+                <h1>A BREATHTAKING EXPERIENCE</h1>
+                <!--The paragragh that describe the quote stated by users-->
+                <p>
+                    "<i>Arriving in Hunter Valley felt like entering a dream. The wonderful setting, exquisite wine and friendly service made it the perfect getaway. We had a great time touring the vineyards and learning about the cultures. This is a place that is definitely worth visiting!</i>"
+                </p>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>- <strong>Bob, P</strong></p>
+            </div>
+              <!--Still using the same class that is typically used for styling the image section-->
+            <div class="regional-img">
+                <!--Image taken from the "img" folder-->
+                <img src="./img/Review2.png" alt="Breathtaking experience">
+            </div>
+        </div> <!--End of the Regional Guide section-->
+    </section>
+
+    <!-- source: https://www.youtube.com/watch?v=nkZz9DOBzBI&list=LL&index=3
+        The code for the footer were generally inspired from this which help formed the template of my assignment and usage-->
+        <footer>
+            <!--Main container for footer content. This div help foster all elements to ensure they are consistently styled and positioned within the footer-->
+            <div class="footerContainer">
+                <div class="socialIcons">
+                    <!--Links to the social media icons from the website-->
+                    <a href="https://www.facebook.com/huntervalleywinecountry/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/huntervalley/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/huntervalleywc"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            <!--Footer Navigation links-->
+            <div class="footerlinks">
+                <!--Unordered list for the navigation links.
+                Provides quick access to other major sections of the websites which help improve the usability-->
+                <ul>
+                    <li><a href="index.html">Home</a></li> <!--Navigation link to home page-->
+                    <li><a href="About.html">About</a></li> <!--Navigation link to about page-->
+                    <li><a href="Experience.html">Experience</a></li> <!--Navigation link to experience page-->
+                    <li><a href="Plan.html">Plan</a></li> <!--Navigation link to plan page-->
+                    <li><a href="Review.html">Review</a></li> <!--Navigation link to review page-->
+                </ul> <!--End of Unordered list-->
+            </div>
+           </div>
+           <!--Footer Bottom Text with class-->
+           <div class="footerBottom">
+            <p>Copyright &copy;2024; Designed by Joline Sumarli</p>
+        </div>
+        </footer>
+        <!-- source: https://www.youtube.com/watch?v=1aqomR-FaHw&list=LL&index=10&t=1283s
+        This tutorial helped and formed the template of my assignment and usage for the javascript.
+        The JavaScript for mobile menu toggle or hamburger menu-->
+        <script>
+            // Create a variable to reference the button with the class "menu-btn" which the button is used to open and close navigation menu
+            const menuBtn = document.querySelector(".menu-btn");
+            // Create a variable to reference the navigation links container with the class "nav-links", this holds a list of navigation links and will be shown or hidden
+            const navLinks = document.querySelector(".nav-links");
+    
+            // Add a "click" event listener to the menuBtn so when the button is clicked, the following fucntion will run
+            menuBtn.addEventListener("click", function(){
+                //Toggle the "active" class on the navlinks element , this help control whether the navigation menu is visible or hidden
+                navLinks.classList.toggle("active")
+            });
+        </script> <!--End of Javascript script-->
+</body>
+</html>

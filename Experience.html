@@ -1,0 +1,175 @@
+<!--Declares the language which the document will be coded on-->
+<!DOCTYPE html>
+<!--Sets the language of the document to english-->
+<html lang="en">
+<head>
+    <!--Sets the character encoding to UTF-8 for compatibility-->
+    <meta charset ="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title of the webpage-->
+    <title>Hunter Valley</title>
+    <!--Linking to external CSS for styling-->
+    <link rel="stylesheet" href="style.css">
+    <!--Link to Font Aweseome for using icons for the Footers-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head> 
+<body>
+    <!---Experience sub section which contains the navigation and experience section-->
+    <section id="experience-sub">
+        <!--Defines the navigation area-->
+            <nav>
+                <!--This is the logo of the site which also link to the homepage-->
+                <div class="logo">
+                    <!--Header that consist the name or logo of the website-->
+                    <h1><a href="index.html">HUNTER VALLEY</a></h1>
+                </div>
+                <!--source:https://www.youtube.com/watch?v=2DVkNvVcQAU
+                I was inspired by this tutorial as it helped me give an idea for the navigation bar.
+                Starts unordered list for the navigation bar links-->
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li> <!--Navigation link to home page-->
+                    <li><a href="About.html">About</a></li>  <!--Navigation link to about page-->
+                    <li><a href="Experience.html">Experience</a></li> <!--Navigation link to experience page-->
+                    <li><a href="Plan.html">Plan</a></li> <!--Navigation link to plan page-->
+                    <li><a href="Review.html">Review</a></li> <!--Navigation link to review page-->
+                </ul>  <!--End of the Unordered list-->
+                 <!--Hamburger menu button for the mobile navigation or phone, which is activated using Javascript Script-->
+                <div class="menu-btn"><img src="./img/menu.svg" alt="Hamburger Menu"></div>
+            </nav> <!--End of navigation area-->
+            <!--Sub content area of the header-->
+            <div class="sub-content">
+                 <!--Title of the Page-->
+                <h1>EXPERIENCE</h1>
+            </div>
+    </section>
+ 
+     <!--Using the same id and class from the Home.html for the layout, this section is now about Vineyard Tours-->
+    <section id="plan" class="container">
+        <div class="plan-img">
+            <!--Image associated with the "Vineyard Tours" content with class that is typically used for styling the image section-->
+            <img src="./img/VineyardTours.jpg" alt="Vineyard Tours">
+        </div>
+        <!-- still using the same content for the planning section with class that is typically used for the styling the content section-->
+        <div class="plan-content">
+            <!--First Heading that introduce the title of the section-->
+            <h1>VINEYARD TOURS</h1>
+             <!--The paragragh that describe how the information or description about it-->
+            <p>Discover the Hunter Valley’s beauty through our iconic vineyard tours, where you can watch the winemaking process. Discover renowned wineries such as Brokenwood Wines, Tyrell’s Wines and many more, where enthusiastic winemakers share their secrets behind exceptional wines.</p>
+            <p>As you wander through lovely vineyards, enjoy breathtaking views and guided tours that highlight the winemaking process. Many tours offer personalized experiences, including private tastings and behind-the-scenes access to wineries are just two examples of the customized experiences that many tours provide.</p>
+            <p>Enjoy your visit with a lovely culinary adventure through the region with local gourmet food pairings. Participate in special activities that honor the Hunter Valley’s distinctive offerings to make every visit unforgettable. Experience Hunter Valley’s enchantment, where each drink reveals a story!</p>
+        <!--A button that link to the booking place for further Information-->
+        <button class="primary-btn"><a href ="https://www.viator.com/Hunter-Valley-tourism/d30973-r49996119775-s110215091?m=64818&supag=150570332373&supca=20315564064&supsc=kwd-300733273140&supai=692897503164&supdv=c&supnt=g&suplp=9112533&supli=&supti=kwd-300733273140&tsem=true&supci=kwd-300733273140&supap1=&supap2=&supfi=&gad_source=1&gclid=Cj0KCQjwvpy5BhDTARIsAHSilymC1aQ-16g7vrojhVK8HfzLyX5tew6xakiX-zevmX1PXLILIQO1C6QaApJQEALw_wcB">BOOK HERE</a></button>
+        </div>
+    </section>
+
+        <!--Decided to use the same id and class from the Plan.html for the layout -->
+        <section id="regional">
+            <!--Defines a flexible layout that helps manage how the child elemeny are display within the container-->
+           <div class="inner-container">
+                <!--The content for the regional section with class that is typically used for the styling the content section-->
+               <div class="regional-content">
+                   <!--First Heading that introduce the title of the section-->
+                   <h1>EAT & DRINK</h1>
+                   <!--The paragragh that describe the quote stated by users-->
+                   <p>
+                    Hunter Valley is renowned for its world class wineries and gourmet food. Every meal is a distinctive experience because it highlights the finest of regional craftsmanship in everything from artisanal cheese to fresh produce.
+                   </p>
+               </div>
+                 <!--Still using the same class that is typically used for styling the image section-->
+               <div class="regional-img">
+                   <!--Image taken from the "img" folder-->
+                   <img src="./img/EAT&DRINK.jpg" alt="Eat & Drink">
+               </div>
+           </div> <!--End of the Regional Guide section-->
+       </section>
+   
+
+    <!--Using the same section from the About.html dedicated to displaying a gallery of images regarding the about Hunter Valley-->
+    <section class="about-image">
+        <h1 class="section-header">EXPLORE HUNTER VALLEY EVENTS</h1>
+        <!--First Image Item-->
+        <div class="image-item">
+            <!-- First Image displayed in the gallery-->
+            <img src="./img/Hunter-Valley-hot-air-balloons.jpg" alt="Hot Air Baloons">
+            <!--Label indicating the content or theme of the image-->
+            <div class="label">HOT AIR BALLOONS</div>
+            <!--Overlay text that appears when the user hover the image-->
+            <div class="overlay">Enjoy the excitement of hot air ballooning over the stunning landscape in the Hunter Valley! Bright Balloons soar as the sun rises, showcasing the wide landscapes of lush vineyards, rolling hills and the peaceful countryside of Hunter Valley. This thrill encounter gives everyone who goes on this trip a new perspective on the beauty of the area and makes unforgettable memories.
+            </div>
+        </div>
+        <!--Second Image Item-->
+        <div class="image-item">
+            <!--Second Image displayed in the gallery-->
+            <img src="./img/ConcertsAndFestivals.png" alt="Concerts and Festivals">
+             <!--Label indicating the content or theme of the image-->
+            <div class="label">CONCERTS & FESTIVALS</div>
+             <!--Overlay text that appears when the user hover the image-->
+            <div class="overlay">Discover the vibrant atmosphere of concerts and festivals in the Hunter Valley, where culture and music are brought to life against a breathtaking background. Throughout the years, the area holds a number of events that showcase both well-known and local performers. There is something for everyone to enjoy, ranging from large-scale music festivals to small-scale performances in vineyards. All who attend will have an amazing time at these events, which not only highlight the varied musical environment but provide an opportunity to enjoy the region's wines and fine dining.
+            </div>
+        </div>
+        <!--Third Image Item-->
+        <div class="image-item">
+             <!--Third Image displayed in the gallery-->
+            <img src="./img/Hunter-Valley-Markets.jpg" alt="Markets">
+             <!--Label indicating the content or theme of the image-->
+            <div class="label">MARKETS</div>
+             <!--Overlay text that appears when the user hover the image-->
+            <div class="overlay">Explore the vibrant Hunter Valley markets, typically held on weekends, where local businesses and artisans display fresh, seasonal produce and handcrafted goods. Enjoy live music and entertainment while sampling fine wines, locally produced meats and handmade cheeses. Anyone visiting the area should stop by these lively markets, which provide a glimpse of the local way of life and culture.  
+            </div>
+        </div>
+        <!--Fourth Image Item-->
+        <div class="image-item">
+             <!--Fourth Image displayed in the gallery-->
+            <img src="./img/Workshops.png" alt="Workshops">
+            <div class="label">WORKSHOPS</div>
+             <!--Overlay text that appears when the user hover the image-->
+            <div class="overlay">Unleash your artistic side in the hunter Valley by participating in interactive programs that include anything from cooking lessons and wine blending to pottery and magazine. Learn from talented craftspeople while taking in the stunning surroundings. These encounters present a special chance to engage with the local way of life and depart with a souvenir of your trip.</div>
+        </div>
+    </section>
+
+<!-- source: https://www.youtube.com/watch?v=nkZz9DOBzBI&list=LL&index=3
+    The code for the footer were generally inspired from this which help formed the template of my assignment and usage-->
+    <footer>
+        <!--Main container for footer content. This div help foster all elements to ensure they are consistently styled and positioned within the footer-->
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <!--Links to the social media icons from the website-->
+                <a href="https://www.facebook.com/huntervalleywinecountry/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/huntervalley/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/huntervalleywc"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        <!--Footer Navigation links-->
+        <div class="footerlinks">
+            <!--Unordered list for the navigation links.
+            Provides quick access to other major sections of the websites which help improve the usability-->
+            <ul>
+                <li><a href="index.html">Home</a></li> <!--Navigation link to home page-->
+                <li><a href="About.html">About</a></li> <!--Navigation link to about page-->
+                <li><a href="Experience.html">Experience</a></li> <!--Navigation link to experience page-->
+                <li><a href="Plan.html">Plan</a></li> <!--Navigation link to plan page-->
+                <li><a href="Review.html">Review</a></li> <!--Navigation link to review page-->
+            </ul>
+        </div>
+       </div>
+       <!--Footer Bottom Text with class-->
+       <div class="footerBottom">
+        <p>Copyright &copy;2024; Designed by Joline Sumarli</p>
+    </div>
+    </footer>
+    <!-- source: https://www.youtube.com/watch?v=1aqomR-FaHw&list=LL&index=10&t=1283s
+    This tutorial helped and formed the template of my assignment and usage for the javascript.
+    The JavaScript for mobile menu toggle or hamburger menu-->
+    <script>
+        // Create a variable to reference the button with the class "menu-btn" which the button is used to open and close navigation menu
+        const menuBtn = document.querySelector(".menu-btn");
+        // Create a variable to reference the navigation links container with the class "nav-links", this holds a list of navigation links and will be shown or hidden
+        const navLinks = document.querySelector(".nav-links");
+
+        // Add a "click" event listener to the menuBtn so when the button is clicked, the following fucntion will run
+        menuBtn.addEventListener("click", function(){
+            //Toggle the "active" class on the navlinks element , this help control whether the navigation menu is visible or hidden
+            navLinks.classList.toggle("active")
+        });
+    </script>  <!--End of Javascript script-->
+</body>
+</html>

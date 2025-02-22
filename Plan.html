@@ -1,0 +1,138 @@
+<!--Declares the language which the document will be coded on-->
+<!DOCTYPE html>
+<!--Sets the language of the document to english-->
+<html lang="en">
+<head>
+    <!--Sets the character encoding to UTF-8 for compatibility-->
+    <meta charset ="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title of the webpage-->
+    <title>Hunter Valley</title>
+    <!--Linking to external CSS for styling-->
+    <link rel="stylesheet" href="style.css">
+    <!--Link to Font Aweseome for using icons for the Footers-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head> 
+<body>
+    <!---Plan sub section which contains the navigation and plan section-->
+    <section id="plan-sub">
+            <!--Defines the navigation area-->
+            <nav>
+                 <!--This is the logo of the site which also link to the homepage-->
+                <div class="logo">
+                     <!--Header that consist the name or logo of the website-->
+                    <h1><a href="index.html">HUNTER VALLEY</a></h1>
+                </div>
+                <!--source:https://www.youtube.com/watch?v=2DVkNvVcQAU
+                I was inspired by this tutorial as it helped me give an idea for the navigation bar.
+                Starts unordered list for the navigation bar links-->
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li> <!--Navigation link to home page-->
+                    <li><a href="About.html">About</a></li> <!--Navigation link to about page-->
+                    <li><a href="Experience.html">Experience</a></li> <!--Navigation link to experience page-->
+                    <li><a href="Plan.html">Plan</a></li> <!--Navigation link to plan page-->
+                    <li><a href="Review.html">Review</a></li> <!--Navigation link to review page-->
+                </ul> <!--End of the Unordered list-->
+                 <!--Hamburger menu button for the mobile navigation or phone, which is activated using Javascript Script-->
+                <div class="menu-btn"><img src="./img/menu.svg" alt="Hamburger Menu"></div>
+            </nav> <!--End of navigation area-->
+            <div class="sub-content">
+                <!--Title of the Page-->
+                <h1>PLAN</h1>
+            </div>
+    </section>
+    <!-- source: https://youtu.be/KIC0OK9nKXY?si=eQJp63nKVQ4ojPqF
+    Section dedicated to the map to help with the direction-->
+    <section id="map-section">
+        <!--Heade introducing the Map section-->
+        <h1>HUNTER VALLEY MAP</h1>
+        <!--div section for the map container-->
+        <div class="map-container">
+            <!--iframe taken from the google map-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d862598.2557168533!2d151.18138649999997!3d-32.3783008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b0cce1839e1c6df%3A0x562ff793f7b67efd!2sHunter%20Region%2C%20NSW!5e0!3m2!1sen!2sau!4v1729510774882!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!--Section dedicated to the regional guide book to help tourists prepare-->
+    <section id="regional">
+    <!--Defines a flexible layout that helps manage how the child elemeny are display within the container-->
+    <div class="inner-container">
+        <!--The content for the regional section withe class that is typically used for the styling the content section-->
+        <div class="regional-content">
+            <!--First Heading that introduce the title of the section-->
+            <h1>REGIONAL GUIDE</h1>
+            <!--The paragragh that describe how to look or see more information about the guide book-->
+            <p>Unlock the secrets of Hunter Valley with our in-depth Regional Guide to make the most of your trip. The goal of these downloadable resources is to maximize your experience and assist you in navigating the area.</p>
+            <p>View or download your free Hunter Valley Regional Guide now! To obtain your guide book and begin organizing your trip, click the button below.</p>
+             <!--A button that links to the Plan page for further Information-->
+            <button class="primary-btn"><a href ="https://images.impartmedia.com/winecountry.com.au/article/HVWTA_2024_GUIDE.pdf">VIEW FULL GUIDE</a></button>
+        </div>
+         <!--Image associated with the "REGIONAL GUIDE" content with class that is typically used for styling the image section-->
+        <div class="regional-img">
+             <!--Image taken from the "img" folder-->
+            <img src="./img/RegionalGuide.png" alt="Regional Guide Book">
+        </div>
+    </div> <!--End of the Regional Guide section-->
+    </section>
+
+    <!--Using the same id and class from the Home.html for the layout, this section is now about more information about weather and climate-->
+    <section id="plan" class="container">
+        <div class="plan-img">
+           <!--Image associated with the "Weather and Climate" content with the same class that is typically used for styling the image section-->
+           <img src="./img/Hunter-Valley-Weather.jpg" alt="Hunter Valley Weather and Climate">
+       </div>
+         <!-- still using the same content for the planning section with class that is typically used for the styling the content section-->
+       <div class="plan-content">
+        <!--First Heading that introduce the title of the section-->
+           <h1>Weather and Climate</h1>
+           <!--The paragragh that describe how the information or description about it-->
+           <p>The Hunter Valley’s mild temperature makes it ideal for outdoor activities and vineyards all year round. In summer (December to February), the Hunter Valley experiences warm days, with an average 30°C, ideal for vineyard tours, though there can be some rainfall. Autumn (March to May) is a few degrees cooler and a fair bit drier with an average of 20°C, great for outdoor events. Winter (June to August) is cozy and crisp with an average of 18 to 20°C. However, temperatures do drop quite a lot at night, though, sometimes as low as 5°C. So be sure to pack a jacket. Spring (September to November) is mild and green with an average of 12 to 25°C.</p>
+       </div>
+   </section>
+
+   <!-- source: https://www.youtube.com/watch?v=nkZz9DOBzBI&list=LL&index=3
+    The code for the footer were generally inspired from this which help formed the template of my assignment and usage-->
+    <footer>
+        <!--Main container for footer content. This div help foster all elements to ensure they are consistently styled and positioned within the footer-->
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <!--Links to the social media icons from the website-->
+                <a href="https://www.facebook.com/huntervalleywinecountry/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/huntervalley/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/huntervalleywc"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        <!--Footer Navigation links-->
+        <div class="footerlinks">
+            <!--Unordered list for the navigation links.
+            Provides quick access to other major sections of the websites which help improve the usability-->
+            <ul>
+                <li><a href="index.html">Home</a></li> <!--Navigation link to home page-->
+                <li><a href="About.html">About</a></li> <!--Navigation link to about page-->
+                <li><a href="Experience.html">Experience</a></li> <!--Navigation link to experience page-->
+                <li><a href="Plan.html">Plan</a></li> <!--Navigation link to plan page-->
+                <li><a href="Review.html">Review</a></li> <!--Navigation link to review page-->
+            </ul> <!--End of Unordered list-->
+        </div>
+       </div>
+       <!--Footer Bottom Text with class-->
+       <div class="footerBottom">
+        <p>Copyright &copy;2024; Designed by Joline Sumarli</p>
+    </div>
+    </footer>
+     <!-- source: https://www.youtube.com/watch?v=1aqomR-FaHw&list=LL&index=10&t=1283s
+    This tutorial helped and formed the template of my assignment and usage for the javascript.
+    The JavaScript for mobile menu toggle or hamburger menu-->
+    <script>
+        // Create a variable to reference the button with the class "menu-btn" which the button is used to open and close navigation menu
+        const menuBtn = document.querySelector(".menu-btn");
+        // Create a variable to reference the navigation links container with the class "nav-links", this holds a list of navigation links and will be shown or hidden
+        const navLinks = document.querySelector(".nav-links");
+
+        // Add a "click" event listener to the menuBtn so when the button is clicked, the following fucntion will run
+        menuBtn.addEventListener("click", function(){
+            //Toggle the "active" class on the navlinks element , this help control whether the navigation menu is visible or hidden
+            navLinks.classList.toggle("active")
+        });
+    </script> <!--End of Javascript script-->
+</body>
+</html>
