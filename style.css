@@ -126,7 +126,7 @@ a{
 .container{
     max-width: 1450px;  /*Maximum width for readability*/
     margin: auto; /*Center the container within the parent*/
-    padding: 100px; /*Horizontal padding for spacing*/
+    padding: 50px; /*Horizontal padding for spacing*/
 }
 
 /*Fixed navigation bar at top with spaced items and background*/
@@ -271,7 +271,7 @@ nav .logo{
     justify-content: space-between; /*Distributing space evenly between items*/
     max-width: 1450px; /*Maximum width limit for large screens*/
     width: 100%; /*Full width*/
-    padding: 100px; /*Horizontal padding*/
+    padding: 50px; /*Horizontal padding*/
 }
 
 /*Styling for content sections with flex properties*/
@@ -672,7 +672,7 @@ footer{
     grid-template-columns: repeat(2, 1fr); /*Two equal columns*/
     gap: 20px; /*Soace between grid items*/
     padding: 100px; /*Padding aroun the grid*/
-}
+}   
 
 .section-header{
     grid-column: 1/-1;/*Span the full width of the grid*/
