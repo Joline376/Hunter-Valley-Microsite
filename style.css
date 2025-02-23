@@ -126,7 +126,7 @@ a{
 .container{
     max-width: 1450px;  /*Maximum width for readability*/
     margin: auto; /*Center the container within the parent*/
-    padding: 50px; /*Horizontal padding for spacing*/
+    padding: 30px; /*Horizontal padding for spacing*/
 }
 
 /*Fixed navigation bar at top with spaced items and background*/
@@ -271,7 +271,7 @@ nav .logo{
     justify-content: space-between; /*Distributing space evenly between items*/
     max-width: 1450px; /*Maximum width limit for large screens*/
     width: 100%; /*Full width*/
-    padding: 50px; /*Horizontal padding*/
+    padding: 30px; /*Horizontal padding*/
 }
 
 /*Styling for content sections with flex properties*/
