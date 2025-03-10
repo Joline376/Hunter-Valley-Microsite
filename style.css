@@ -127,7 +127,6 @@ a{
     max-width: 1450px;  /*Maximum width for readability*/
     margin: auto; /*Center the container within the parent*/
     padding: 0 8px; /*Horizontal padding for spacing*/
-    background-color: var(--white);
 }
 
 /*Fixed navigation bar at top with spaced items and background*/
@@ -281,7 +280,7 @@ nav .logo{
 .regional-content {
     flex: 1; /*Allowing flex to grow and fill available space*/
     max-width: 50%; /*Limiting width to half of the parent*/
-    padding: 20px 50px;  /*Padding around the content*/
+    padding: 20px;  /*Padding around the content*/
 }
 
 /*Flex conatiners for images with centered layout*/
