@@ -127,7 +127,7 @@ a{
 .container{
     max-width: 1450px;  /*Maximum width for readability*/
     margin: auto; /*Center the container within the parent*/
-    padding: 0 50px; /*Horizontal padding for spacing*/
+    padding: 0 8px; /*Horizontal padding for spacing*/
 }
 
 /*Fixed navigation bar at top with spaced items and background*/
@@ -242,7 +242,6 @@ nav .logo{
     justify-content: space-between; /*Distributing space between items*/
     margin-top: 60px; /*Top margin to seperate from previous content*/
     margin-bottom: 60px; /*Bottom margin for spacing below*/
-    padding: 50px 0;
 }
 
  /*Creating a background sections for the regional section*/
@@ -273,7 +272,7 @@ nav .logo{
     justify-content: space-between; /*Distributing space evenly between items*/
     max-width: 1450px; /*Maximum width limit for large screens*/
     width: 100%; /*Full width*/
-    padding: 0 50px; /*Horizontal padding*/
+    padding: 0 20px; /*Horizontal padding*/
 }
 
 /*Styling for content sections with flex properties*/
