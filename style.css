@@ -671,7 +671,7 @@ footer{
     display: grid; /*Use the grid layout*/
     grid-template-columns: repeat(2, 1fr); /*Two equal columns*/
     gap: 20px; /*Soace between grid items*/
-    padding: 100px; /*Padding aroun the grid*/
+    padding: 90px; /*Padding aroun the grid*/
 }
 
 .section-header{
