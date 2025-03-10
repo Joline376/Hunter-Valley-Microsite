@@ -24,6 +24,7 @@ body{
     font-style: normal; /*Normal font style*/
     overflow-x: hidden; /*Prevents horizontal scrolling*/
     box-sizing: border-box;
+    background-color: #ffffff;
 }
 
 /*Anchor tag styling that helps removes the underline and inherits color for clean design*/
@@ -126,7 +127,7 @@ a{
 .container{
     max-width: 1450px;  /*Maximum width for readability*/
     margin: auto; /*Center the container within the parent*/
-    padding: 0 8px; /*Horizontal padding for spacing*/
+    padding: 0 20px; /*Horizontal padding for spacing*/
 }
 
 /*Fixed navigation bar at top with spaced items and background*/
@@ -241,6 +242,7 @@ nav .logo{
     justify-content: space-between; /*Distributing space between items*/
     margin-top: 60px; /*Top margin to seperate from previous content*/
     margin-bottom: 60px; /*Bottom margin for spacing below*/
+    padding: 50px 0;
 }
 
  /*Creating a background sections for the regional section*/
